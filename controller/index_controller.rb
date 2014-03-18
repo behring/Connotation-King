@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'wei-backend'
-token "connotation-king"
+token "connotation_king"
 
 get '/index' do
 	"hello sinatra"
