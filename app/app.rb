@@ -33,7 +33,7 @@ on_text do
         jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
         jokes_str = ""
         jokes.each do |joke|
-          jokes_str << joke << "</br>"
+          jokes_str << joke << "\n"
         end  
         jokes_str
     when "3"
