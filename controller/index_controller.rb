@@ -11,7 +11,7 @@ on_text do
   user_input_content = params[:Content].strip
   case user_input_content
     when "?","？"
-      "您好，我是内含王,请回复数字选择您感兴趣的节目：
+      "您好,我是内含王,请回复数字选择您感兴趣的节目:
       1 内涵漫画
       2 幽默笑话
       3 心灵物语"
