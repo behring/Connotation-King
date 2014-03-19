@@ -14,6 +14,8 @@ token "connotation_king"
 
 get '/index' do
 	"hello sinatra"
+  # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html")) 
+  # "#{page.css('div#imgshowdiv span')[0].text}"
 end
 
 
@@ -32,7 +34,7 @@ on_text do
       [
         {
          :title => page.css('div#imgshowdiv img')[0]['alt'],
-         :description => 'desc',
+         :description => page.css('div#imgshowdiv span')[0].text,
          :picture_url => page.css('div#imgshowdiv img')[0]['src'],
          :url => 'http://www.xiaojiulou.com/sexi/3639.html'
         }
