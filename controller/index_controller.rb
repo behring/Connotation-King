@@ -12,6 +12,9 @@ get '/index' do
 	"hello sinatra"
   # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html")) 
   # "#{page.css('div#imgshowdiv span')[0].text}"
+
+  page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"))   
+  "#{page.css('span#text110 p')[0]}"
 end
 
 
@@ -43,7 +46,13 @@ on_text do
       ]
 
     when "2"
-      "你发送了如下内容:  #{user_input_content}"
+      # page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"))   
+      
+
+      # "#{page.css('span#text110 p')[0].text}
+      # #{page.css('span#text110 p')[1].text}
+      # #{page.css('span#text110 p')[2].text}
+      # #{page.css('span#text110 p')[3].text}"
     when "3"
       "你发送了如下内容:  #{user_input_content}"
     else
