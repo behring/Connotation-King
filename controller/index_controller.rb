@@ -28,20 +28,20 @@ on_text do
 
 end
 
-on_text do
-  [{
-       :title => '收到一个文本消息，返回两个图文消息',
-       :description => 'desc',
-       :picture_url => 'pic url',
-       :url => 'url'
-   },
-   {
-       :title => '这是第二个图文消息',
-       :description => 'desc1',
-       :picture_url => 'pic url1',
-       :url => 'url1'
-   }]
-end
+# on_text do
+#   [{
+#        :title => '收到一个文本消息，返回两个图文消息',
+#        :description => 'desc',
+#        :picture_url => 'pic url',
+#        :url => 'url'
+#    },
+#    {
+#        :title => '这是第二个图文消息',
+#        :description => 'desc1',
+#        :picture_url => 'pic url1',
+#        :url => 'url1'
+#    }]
+# end
 
 on_subscribe do
     "感谢您订阅“内含王”\n
