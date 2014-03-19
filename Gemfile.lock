@@ -27,6 +27,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  nokogiri
   shotgun
   sinatra
   wei-backend

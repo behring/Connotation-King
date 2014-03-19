@@ -1,7 +1,16 @@
 require 'rubygems'
 require 'sinatra'
 require 'wei-backend'
+require 'nokogiri'
+require 'open-uri'
+
 token "connotation_king"
+
+
+
+
+
+
 
 get '/index' do
 	"hello sinatra"
@@ -18,11 +27,13 @@ on_text do
       2 幽默笑话
       3 心灵物语"
     when "1"
+      page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html"))   
+
       [{
-       :title => '收到一个文本消息，返回两个图文消息',
+       :title => page.css('div#imgshowdiv img')[0]['alt'],
        :description => 'desc',
-       :picture_url => 'pic url',
-       :url => 'url'
+       :picture_url => page.css('div#imgshowdiv img')[0]['src'],
+       :url => 'http://www.xiaojiulou.com/sexi/3639.html'
       },
       {
        :title => '这是第二个图文消息',
