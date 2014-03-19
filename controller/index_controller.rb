@@ -29,18 +29,20 @@ on_text do
     when "1"
       page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html"))   
 
-      [{
-       :title => page.css('div#imgshowdiv img')[0]['alt'],
-       :description => 'desc',
-       :picture_url => page.css('div#imgshowdiv img')[0]['src'],
-       :url => 'http://www.xiaojiulou.com/sexi/3639.html'
-      },
-      {
-       :title => '这是第二个图文消息',
-       :description => 'desc1',
-       :picture_url => 'pic url1',
-       :url => 'url1'
-      }]
+      [
+        {
+         :title => page.css('div#imgshowdiv img')[0]['alt'],
+         :description => 'desc',
+         :picture_url => page.css('div#imgshowdiv img')[0]['src'],
+         :url => 'http://www.xiaojiulou.com/sexi/3639.html'
+        }
+        # ,{
+        #  :title => '这是第二个图文消息',
+        #  :description => 'desc1',
+        #  :picture_url => 'pic url1',
+        #  :url => 'url1'
+        # }
+      ]
 
     when "2"
       "你发送了如下内容:  #{user_input_content}"
