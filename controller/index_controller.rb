@@ -8,10 +8,6 @@ token "connotation_king"
 
 
 
-
-
-
-
 get '/index' do
 	"hello sinatra"
   # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html")) 
