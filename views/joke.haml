@@ -2,7 +2,8 @@
   ='微信订阅号#内含王#'
 %body
   %div
-    %p
-      =joke
+    - jokes.each do |joke|
+      %p
+        = joke
 
 

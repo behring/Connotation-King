@@ -12,8 +12,11 @@ get '/index' do
 end
 
 get '/' do
-  page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"),nil,'GBK')  
-  haml :joke,  :locals => { :joke =>page.css('#text110 p')[0].inner_text}
+  # page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"),nil,'GBK')  
+  jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
+
+  haml :joke,  :locals => { :jokes =>jokes}
+
 end
 
 

@@ -10,13 +10,15 @@ on_text do
       2 幽默笑话
       3 心灵物语"
     when "1"
-      page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html"))   
+      # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html"))   
+
+      cartoon_info = GrabData.grab_cartoon("http://www.xiaojiulou.com/sexi/3639.html")
 
       [
         {
-         :title => page.css('div#imgshowdiv img')[0]['alt'],
-         :description => page.css('div#imgshowdiv span')[0].text,
-         :picture_url => page.css('div#imgshowdiv img')[0]['src'],
+         :title => cartoon_info[:title],
+         :description => cartoon_info[:description],
+         :picture_url => cartoon_info[:picture_url],
          :url => 'http://connotation-king.herokuapp.com/'
         }
         # ,{
@@ -28,13 +30,11 @@ on_text do
       ]
 
     when "2"
-      # page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"))   
-      
-
-      # "#{page.css('span#text110 p')[0].text}
-      # #{page.css('span#text110 p')[1].text}
-      # #{page.css('span#text110 p')[2].text}
-      # #{page.css('span#text110 p')[3].text}"
+     jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
+     jokes.each do |joke|
+      jokes_str << joke << "\n"
+     end
+     jokes_str
     when "3"
       "你发送了如下内容:  #{user_input_content}"
     else

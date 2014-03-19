@@ -4,5 +4,5 @@ require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
 require 'haml'
-
+require_relative 'grab_data'
 require_relative '../controller/index_controller'
