@@ -8,14 +8,13 @@ get '/index' do
 end
 
 on_text do
-  user_input_content = params[:Content].to_s
+  user_input_content = params[:Content].strip
   case user_input_content
-    when "?"
-      "您好，我是内含王，”\n
-      请回复数字选择您感兴趣的节目：\n
-      1 内涵漫画\n
-      2 幽默笑话\n
-      3 心灵物语\n" 
+    when "?","？"
+      puts "您好，我是内含王,请回复数字选择您感兴趣的节目：
+     1 内涵漫画
+     2 幽默笑话
+     3 心灵物语"
     when "1"
       "你发送了如下内容:  #{user_input_content}"
     when "2"
@@ -23,7 +22,7 @@ on_text do
     when "3"
       "你发送了如下内容:  #{user_input_content}"
     else
-      "回复“？”你就知道啦"
+      "回复“?”你就知道啦"
   end
 
 end
