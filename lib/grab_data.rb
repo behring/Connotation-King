@@ -14,7 +14,7 @@ class GrabData
 		cartoon_info = Hash.new
 		cartoon_info[:title] = page_cartoon.css('div#imgshowdiv img')[0]['alt']
 		cartoon_info[:description] = page_cartoon.css('div#imgshowdiv span')[0].text
-		cartoon_info[:picture_url] = css('div#imgshowdiv img')[0]['src']
+		cartoon_info[:picture_url] = page_cartoon.css('div#imgshowdiv img')[0]['src']
 		return cartoon_info		
 	end
 end

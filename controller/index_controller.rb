@@ -1,5 +1,5 @@
 get '/index' do
-	"hello sinatra"
+	# "hello sinatra"
 
 # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html")) 
 #   "#{page.css('div.zw_page1 a')[0]['href']}
@@ -8,6 +8,11 @@ get '/index' do
 
   # page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"),nil,'GBK')  
   # p page.css('#text110 p')[0].inner_text
+
+cartoon_info = GrabData.grab_cartoon("http://www.xiaojiulou.com/sexi/3639.html")
+
+"#{cartoon_info[:title]}#{cartoon_info[:description]}#{cartoon_info[:picture_url]}"
+    
 
 end
 
