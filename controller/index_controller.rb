@@ -14,8 +14,11 @@ token "connotation_king"
 
 get '/index' do
 	"hello sinatra"
-  # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html")) 
-  # "#{page.css('div#imgshowdiv span')[0].text}"
+# page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html")) 
+#   "#{page.css('div.zw_page1 a')[0]['href']}
+#    #{page.css('div.zw_page2 a')[0]['href']}
+#    #{page.css('div.zw_page3 a')[0]['href']}"
+
 end
 
 
