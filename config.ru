@@ -1,10 +1,3 @@
-require './app/app.rb'
-
-use Rack::Reloader
-
-root_dir = File.dirname(__FILE__)
-
-set :environment, ENV['RACK_ENV'].to_sym
-set :root,        root_dir
-
+#require './app/controllers/application_controller.rb'
+require './app/environments'
 run Sinatra::Application
