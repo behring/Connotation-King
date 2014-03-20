@@ -1,1 +1,0 @@
-require_relative 'controller/index_controller'

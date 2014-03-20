@@ -9,11 +9,11 @@ require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 
 require_relative './constant'
-require_relative '../lib/grab_data'
-require_relative '../lib/db_helper'
-
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
+
+require_relative '../lib/grab_data'
+require_relative '../lib/db_helper'
 
 
 require_relative '../app/controllers/index_controller'

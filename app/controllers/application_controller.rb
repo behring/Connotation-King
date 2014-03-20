@@ -12,6 +12,7 @@ on_text do
     when "1"
 
       cartoon = GrabData.grab_cartoon(CARTOON_DEFAULT_URL)
+      DBHelper.add_cartoon(cartoon)
 
       [
         {
@@ -30,9 +31,15 @@ on_text do
 
     when "2"
         joke = GrabData.grab_joke(JOKE_DEFAULT_URL)
+        DBHelper.add_joke(joke)
         joke.content
     when "3"
-      "你发送了如下内容:  #{user_input_content}"
+        
+
+      "你发送了如下内容:  #{user_input_content}\n
+      笑话数量：#{DBHelper.count_joke}个\n
+      漫画数量：#{DBHelper.count_cartoon}个
+      "
     else
       "回复“?”你就知道啦"
   end
