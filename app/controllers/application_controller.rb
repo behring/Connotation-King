@@ -16,9 +16,9 @@ on_text do
 
       [
         {
-         :title => cartoon.title,
-         :description => cartoon.description,
-         :picture_url => cartoon.picture_url,
+         :title => cartoon.title.to_s,
+         :description => cartoon.description.to_s,
+         :picture_url => cartoon.picture_url.to_s,
          :url => 'http://connotation-king.herokuapp.com/'
         }
         # ,{
@@ -32,7 +32,7 @@ on_text do
     when "2"
         joke = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
         # DBHelper.add_joke(joke)
-        joke.content
+        joke.content.to_s
     when "3"
         
       "你发送了如下内容:  #{user_input_content}"
