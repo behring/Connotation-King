@@ -1,0 +1,11 @@
+%title
+  ='微信订阅号#内含王#'
+%body
+  %div
+    - data.each do |post|
+      %p
+        = post.title
+      %p
+        = post.body
+      %p
+        = post.id

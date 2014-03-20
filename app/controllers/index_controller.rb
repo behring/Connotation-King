@@ -24,10 +24,12 @@ end
 
 get '/' do
   # page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"),nil,'GBK')  
-  jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
+  # jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
+  # haml :joke,  :locals => { :jokes =>jokes}
+  Post.create(title: "behring", body: "hahahahahaha.")
+  posts = Post.order("created_at DESC")
 
-  haml :joke,  :locals => { :jokes =>jokes}
-
+  haml :postgres_test,  :locals => { :data =>posts}
 end
 
 

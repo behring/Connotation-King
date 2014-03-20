@@ -5,11 +5,13 @@ require 'nokogiri'
 require 'open-uri'
 require 'haml'
 require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
 
 require_relative '../lib/grab_data'
 require_relative '../app/controllers/index_controller'
 require_relative '../app/controllers/application_controller'
-require_relative '../app/app.rb'
+require_relative '../app/models/post'
+require_relative '../app/models/joke'
 
 
 
