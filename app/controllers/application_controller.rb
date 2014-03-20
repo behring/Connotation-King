@@ -1,5 +1,6 @@
 token "connotation_king"
 
+
 on_text do
   user_input_content = params[:Content].strip
   case user_input_content
@@ -9,15 +10,14 @@ on_text do
       2 幽默笑话
       3 心灵物语"
     when "1"
-      # page = Nokogiri::HTML(open("http://www.xiaojiulou.com/sexi/3639.html"))   
 
-      cartoon_info = GrabData.grab_cartoon("http://www.xiaojiulou.com/sexi/3639.html")
+      cartoon = GrabData.grab_cartoon(CARTOON_DEFAULT_URL)
 
       [
         {
-         :title => cartoon_info[:title],
-         :description => cartoon_info[:description],
-         :picture_url => cartoon_info[:picture_url],
+         :title => cartoon.title,
+         :description => cartoon.description,
+         :picture_url => cartoon.picture_url,
          :url => 'http://connotation-king.herokuapp.com/'
         }
         # ,{
@@ -29,12 +29,8 @@ on_text do
       ]
 
     when "2"
-        jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
-        jokes_str = ""
-        jokes.each do |joke|
-          jokes_str << joke << "\n"#网页用</br>换行，微信用\n换行
-        end  
-        jokes_str
+        joke = GrabData.grab_joke(JOKE_DEFAULT_URL)
+        joke.content
     when "3"
       "你发送了如下内容:  #{user_input_content}"
     else

@@ -4,16 +4,25 @@ require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
 require 'haml'
+require 'timers'
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 
+require_relative './constant'
 require_relative '../lib/grab_data'
-require_relative '../app/controllers/index_controller'
-require_relative '../app/controllers/application_controller'
-require_relative '../app/models/post'
+require_relative '../lib/db_helper'
+
+require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
 
 
+require_relative '../app/controllers/index_controller'
+require_relative '../app/controllers/application_controller'
+
+
+
+
+# require_relative '../lib/timer'
 
 
 configure :development do
