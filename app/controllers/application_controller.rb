@@ -32,7 +32,7 @@ on_text do
     when "2"
         joke = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
         # DBHelper.add_joke(joke)
-        joke.content.to_s
+        "#{joke.content}"
     when "3"
         
       "你发送了如下内容:  #{user_input_content}"
