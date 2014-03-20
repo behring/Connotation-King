@@ -1,0 +1,10 @@
+curl -H 'Content-type:text/xml' -d@- localhost:4567/weixin << EOF
+<xml>
+ <ToUserName><![CDATA[toUser]]></ToUserName>
+ <FromUserName><![CDATA[fromUser]]></FromUserName> 
+ <CreateTime>1348831860</CreateTime>
+ <MsgType><![CDATA[text]]></MsgType>
+ <Content><![CDATA[1]]></Content>
+ <MsgId>1234567890123456</MsgId>
+</xml>
+EOF
