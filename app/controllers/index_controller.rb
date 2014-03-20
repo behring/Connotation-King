@@ -11,10 +11,10 @@ get '/index' do
 
 # "#{cartoon_info[:title]}#{cartoon_info[:description]}#{cartoon_info[:picture_url]}"
    
-   # joke = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
+   joke = GrabData.grab_joke(JOKE_DEFAULT_URL)
 
-     # "#{cartoon_info.picture_url}" 
-     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+     "#{joke.content}" 
+
 
 end
 
