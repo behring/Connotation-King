@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140320120044) do
+ActiveRecord::Schema.define(version: 20140321030734) do
 
   create_table "cartoons", force: true do |t|
     t.string   "title"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20140320120044) do
   end
 
   create_table "jokes", force: true do |t|
+    t.string   "title"
     t.text     "content"
     t.string   "url"
     t.string   "other_urls"

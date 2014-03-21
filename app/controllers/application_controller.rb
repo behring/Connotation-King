@@ -1,4 +1,4 @@
-token "connotation_king"
+# token "connotation_king"
 
 
 on_text do
@@ -11,7 +11,10 @@ on_text do
       3 心灵物语"
     when "1"
       cartoon_url = DBHelper.get_last_cartoon_url
-
+      if cartoon_url == nil
+        cartoon_url = CARTOON_DEFAULT_URL
+      end
+      puts "#cartoon_url: {cartoon_url}"
       cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
 
@@ -32,6 +35,10 @@ on_text do
 
     when "2"
         joke_url = DBHelper.get_last_joke_url
+        if joke_url == nil
+          joke_url = JOKE_DEFAULT_URL
+        end
+        puts "joke_url :#{joke_url}"
         joke = GrabData.grab_joke(joke_url)        
         DBHelper.add_joke(joke)
         joke.content

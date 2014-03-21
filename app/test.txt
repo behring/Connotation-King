@@ -1,3 +1,15 @@
+curl -H 'Content-type:text/xml' -d@- http://stark-plateau-3435.herokuapp.com:80/weixin << EOF
+<xml>
+ <ToUserName><![CDATA[toUser]]></ToUserName>
+ <FromUserName><![CDATA[fromUser]]></FromUserName> 
+ <CreateTime>1348831860</CreateTime>
+ <MsgType><![CDATA[text]]></MsgType>
+ <Content><![CDATA[3]]></Content>
+ <MsgId>1234567890123456</MsgId>
+</xml>
+EOF
+
+
 curl -H 'Content-type:text/xml' -d@- localhost:4567/weixin << EOF
 <xml>
  <ToUserName><![CDATA[toUser]]></ToUserName>

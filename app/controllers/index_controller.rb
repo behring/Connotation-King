@@ -11,9 +11,10 @@ get '/index' do
 
 # "#{cartoon_info[:title]}#{cartoon_info[:description]}#{cartoon_info[:picture_url]}"
    
-   joke = GrabData.grab_joke(JOKE_DEFAULT_URL)
+   # joke = GrabData.grab_joke(JOKE_DEFAULT_URL)
+   joke = Joke.first
 
-     "#{joke.content}" 
+     "#{joke.other_urls}" 
 
 
 end
