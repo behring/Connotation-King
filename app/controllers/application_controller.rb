@@ -17,7 +17,7 @@ on_text do
 
       cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
-      jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<cartoon.id
+      jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<cartoon.id.to_s
 
       [
         {
