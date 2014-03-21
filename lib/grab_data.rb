@@ -43,7 +43,7 @@ class GrabData
 			cartoon.title = img_node['alt']
 			cartoon.picture_url = img_node['src']
 			other_urls =  "#{page_cartoon.css('div.zw_page1 a')[0]['href']} #{page_cartoon.css('div.zw_page2 a')[0]['href']} #{page_cartoon.css('div.zw_page3 a')[0]['href']}"
-			cartoon.description = page_cartoon.css('div#imgshowdiv h1')[0].text
+			cartoon.description = page_cartoon.css('div#imgshowdiv span')[0].text
 			cartoon.other_urls = other_urls
 			cartoon.url = cartoon_url
 		end

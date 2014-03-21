@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require "base64"
 require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
