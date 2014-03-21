@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cartoon.haml" afterPath="$PROJECT_DIR$/app/views/cartoon.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/connotation-king.iml" afterPath="$PROJECT_DIR$/.idea/connotation-king.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/constant.rb" afterPath="$PROJECT_DIR$/app/constant.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="cartoon.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="58" selection-start="112" selection-end="112" vertical-scroll-proportion="0.1278409" vertical-offset="0" max-vertical-offset="704">
+            <state line="6" column="45" selection-start="99" selection-end="99" vertical-scroll-proportion="0.1278409" vertical-offset="0" max-vertical-offset="704">
               <folding />
             </state>
           </provider>
@@ -201,7 +198,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="112" selection-end="112" vertical-scroll-proportion="0.1278409" vertical-offset="0" max-vertical-offset="704">
+        <state line="6" column="45" selection-start="99" selection-end="99" vertical-scroll-proportion="0.1278409" vertical-offset="0" max-vertical-offset="704">
           <folding />
         </state>
       </provider>
