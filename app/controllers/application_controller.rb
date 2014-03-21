@@ -1,4 +1,4 @@
-token "connotation_king"
+# token "connotation_king"
 
 
 on_text do
@@ -17,22 +17,27 @@ on_text do
 
       cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
+      #需要从数据库查询出来才会有id
+      cartoon = Cartoon.find_by url:cartoon.url
+
+
+
       jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<cartoon.id.to_s
 
-      [
-        {
-         :title => cartoon.title,
-         :description => cartoon.description,
-         :picture_url => cartoon.picture_url,
-         :url => jump_url
-        }
-        # ,{
-        #  :title => '这是第二个图文消息',
-        #  :description => 'desc1',
-        #  :picture_url => 'pic url1',
-        #  :url => 'url1'
-        # }
-      ]
+      # [
+      #   {
+      #    :title => cartoon.title,
+      #    :description => cartoon.description,
+      #    :picture_url => cartoon.picture_url,
+      #    :url => jump_url
+      #   }
+      #   # ,{
+      #   #  :title => '这是第二个图文消息',
+      #   #  :description => 'desc1',
+      #   #  :picture_url => 'pic url1',
+      #   #  :url => 'url1'
+      #   # }
+      # ]
 
     when "2"
         joke_url = DBHelper.get_last_joke_url
