@@ -10,8 +10,9 @@ on_text do
       2 幽默笑话
       3 心灵物语"
     when "1"
+      cartoon_url = DBHelper.get_last_cartoon_url
 
-      cartoon = GrabData.grab_cartoon(CARTOON_DEFAULT_URL)
+      cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
 
       [
@@ -30,8 +31,8 @@ on_text do
       ]
 
     when "2"
-
-        joke = GrabData.grab_joke(JOKE_DEFAULT_URL)        
+        joke_url = DBHelper.get_last_joke_url
+        joke = GrabData.grab_joke(joke_url)        
         DBHelper.add_joke(joke)
         joke.content
 
