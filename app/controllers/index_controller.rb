@@ -19,15 +19,17 @@ get '/index' do
 
 end
 
-get '/' do
+get '/cartoon' do
   # page = Nokogiri::HTML(open("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"),nil,'GBK')  
   # jokes = GrabData.grab_joke("http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm")
   # haml :joke,  :locals => { :jokes =>jokes}
 
+  # Post.create(title: "behring", body: "hahahahahaha.")
+  # posts = Post.order("created_at DESC")
+  # haml :postgres_test,  :locals => { :data =>posts}
+  picture_url = Cartoon.last.picture_url
+  haml :cartoon,  :locals => { :picture_url =>picture_url}
 
-  Post.create(title: "behring", body: "hahahahahaha.")
-  posts = Post.order("created_at DESC")
-  haml :postgres_test,  :locals => { :data =>posts}
 
 end
 

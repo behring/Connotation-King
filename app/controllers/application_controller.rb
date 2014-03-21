@@ -14,7 +14,7 @@ on_text do
       if cartoon_url == nil
         cartoon_url = CARTOON_DEFAULT_URL
       end
-      puts "#cartoon_url: {cartoon_url}"
+
       cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
 
@@ -23,7 +23,7 @@ on_text do
          :title => cartoon.title,
          :description => cartoon.description,
          :picture_url => cartoon.picture_url,
-         :url => 'http://connotation-king.herokuapp.com/'
+         :url => 'http://connotation-king.herokuapp.com/cartoon'
         }
         # ,{
         #  :title => '这是第二个图文消息',
@@ -38,7 +38,7 @@ on_text do
         if joke_url == nil
           joke_url = JOKE_DEFAULT_URL
         end
-        puts "joke_url :#{joke_url}"
+
         joke = GrabData.grab_joke(joke_url)        
         DBHelper.add_joke(joke)
         joke.content

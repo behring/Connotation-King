@@ -10,7 +10,6 @@ class DBHelper
 
 	def self.get_last_joke_url
 		if Joke.last != nil
-			puts "#{Joke.last.other_urls}"
 			other_urls_array = Joke.last.other_urls.to_s.split
 			other_urls_array[1] #1表示下一篇笑话 0表示上一篇笑话
 		else
