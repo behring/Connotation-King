@@ -1,4 +1,4 @@
 JOKE_DEFAULT_URL = "http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"
 CARTOON_DEFAULT_URL = "http://www.xiaojiulou.com/sexi/3639.html"
 WEIXIN_IMAGE_QR_CODE = "https://mp.weixin.qq.com/cgi-bin/getimgdata?token=1268146484&msgid={msgid}&mode=large&source=file&fileId=200090819&ow=-1"
-WEXIN_GIF_MLS = "https://mp.weixin.qq.com/cgi-bin/getimgdata?token=1268146484&msgid={msgid}&mode=large&source=file&fileId=200090914&ow=-1"
+WEXIN_GIF_MLS = "http://d.pcs.baidu.com/thumbnail/ee78082c3a038aad3e74fe115246e4fc?fid=3087922199-250528-3729829380&time=1395417448&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-iiEqo9PMETGttI8riT%2F6LDC2w4s%3D&expires=8h&prisign=amMwnVibYf88f2TB/V4FApSN5rJwOqzRhL6Now25HScufo4OuxITn8BmzguRNe+KmAZpJ2usCIioNkCYevhcQqo5rHOtKS4vAcdPT77uxjF528u8yMEWFMKCU55gdZOPF+eThF0cEZi425GOa9qpEaDRxs+MDqkRfspRr3AZWqx2RegzuVnzaX3A3Rtz2/Obwq48P8v2auVRdGeENY3ooTQSVdTCPk1KkLBWDX3Fjqk3lxtUepiiwA==&r=427260024&size=c10000_u10000&quality=100"
