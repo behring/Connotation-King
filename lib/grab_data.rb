@@ -1,5 +1,6 @@
 class GrabData
 	def self.grab_joke(joke_url)
+		uts "joke_url:#{joke_url}"
 		joke = Joke.new
 		page_joke = Nokogiri::HTML(open(joke_url),nil,'GBK')
 
@@ -30,7 +31,7 @@ class GrabData
 	end
 
 	def self.grab_cartoon(cartoon_url)
-		
+		puts "cartoon_url :#{cartoon_url}"
 		cartoon = Cartoon.new
 		page_cartoon = Nokogiri::HTML(open(cartoon_url))
 		
