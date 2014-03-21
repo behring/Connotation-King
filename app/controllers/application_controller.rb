@@ -23,7 +23,7 @@ on_text do
          :title => cartoon.title,
          :description => cartoon.description,
          :picture_url => cartoon.picture_url,
-         :url => "http://connotation-king.herokuapp.com/cartoon/#{Base64.encode64(cartoon.picture_url)}"
+         :url => "http://connotation-king.herokuapp.com/cartoon/#{Base64.encode64(cartoon.picture_url.to_s)}"
         }
         # ,{
         #  :title => '这是第二个图文消息',

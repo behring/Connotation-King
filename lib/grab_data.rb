@@ -1,6 +1,6 @@
 class GrabData
 	def self.grab_joke(joke_url)
-		uts "joke_url:#{joke_url}"
+		
 		joke = Joke.new
 		page_joke = Nokogiri::HTML(open(joke_url),nil,'GBK')
 
@@ -31,17 +31,26 @@ class GrabData
 	end
 
 	def self.grab_cartoon(cartoon_url)
-		puts "cartoon_url :#{cartoon_url}"
 		cartoon = Cartoon.new
-		page_cartoon = Nokogiri::HTML(open(cartoon_url))
 		
-		other_urls =  "#{page_cartoon.css('div.zw_page1 a')[0]['href']} #{page_cartoon.css('div.zw_page2 a')[0]['href']} #{page_cartoon.css('div.zw_page3 a')[0]['href']}"
+		page_cartoon = Nokogiri::HTML(open(cartoon_url))
+		img_node = page_cartoon.css('div#imgshowdiv img')[0]
+		if img_node==nil
+			random_cartoon_url = page_cartoon.css('div.zw_page2 a')[0]['href']
+			self.grab_cartoon(random_cartoon_url)
 
-		cartoon.title = page_cartoon.css('div#imgshowdiv img')[0]['alt']
-		cartoon.description = page_cartoon.css('div#imgshowdiv span')[0].text
-		cartoon.picture_url = page_cartoon.css('div#imgshowdiv img')[0]['src']
-		cartoon.url = cartoon_url
-		cartoon.other_urls = other_urls
+		else
+			cartoon.title = img_node['alt']
+			cartoon.picture_url = img_node['src']
+			other_urls =  "#{page_cartoon.css('div.zw_page1 a')[0]['href']} #{page_cartoon.css('div.zw_page2 a')[0]['href']} #{page_cartoon.css('div.zw_page3 a')[0]['href']}"
+			cartoon.description = page_cartoon.css('div#imgshowdiv h1')[0].text
+			cartoon.other_urls = other_urls
+			cartoon.url = cartoon_url
+		end
+
+		
+		
+		
 
 		return cartoon		
 	end

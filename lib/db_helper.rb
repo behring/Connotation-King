@@ -9,8 +9,8 @@ class DBHelper
 	end
 
 	def self.get_last_joke_url
-		if Joke.last != nil
-			other_urls_array = Joke.last.other_urls.to_s.split
+		if Joke.last.other_urls != nil
+			other_urls_array = Joke.last.other_urls.split
 			other_urls_array[1] #1表示下一篇笑话 0表示上一篇笑话
 		else
 			nil
@@ -29,7 +29,7 @@ class DBHelper
 	end
 
 	def self.get_last_cartoon_url
-		if Cartoon.last != nil
+		if Cartoon.last.other_urls != nil
 			other_urls_array = Cartoon.last.other_urls.split
 			other_urls_array[1] #2表示下一个漫画 0表示上一个漫画 1表示随机一个漫画
 		else
