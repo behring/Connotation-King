@@ -4,7 +4,7 @@ get '/index' do
 end
 
 get '/cartoon/:id' do
-  cartoon_id = params[:id]
+  cartoon_id = params[:id].to_i
   cartoon = Cartoon.find_by id:cartoon_id
   haml :cartoon,  :locals => {:title =>cartoon.title,:picture_url =>cartoon.picture_url}
 
