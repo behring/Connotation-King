@@ -1,5 +1,5 @@
 get '/index' do
-	enc   = Base64.encode64(JOKE_DEFAULT_URL)
+	enc   = Base64.encode64("http://ww3.sinaimg.cn/large/6b269d7dtw1ea6y4sxj63j20e628dk68.jpg")
                     # -> "U2VuZCByZWluZm9yY2VtZW50cw==\n"
 	plain = Base64.decode64(enc)
                     # -> "Send reinforcements"
