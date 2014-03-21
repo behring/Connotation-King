@@ -17,13 +17,14 @@ on_text do
 
       cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
+      jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<"#{Base64.encode64(cartoon.picture_url.to_s)}"
 
       [
         {
          :title => cartoon.title,
          :description => cartoon.description,
          :picture_url => cartoon.picture_url,
-         :url => "http://connotation-king.herokuapp.com/cartoon/#{Base64.encode64(cartoon.picture_url.to_s)}"
+         :url => jump_url
         }
         # ,{
         #  :title => '这是第二个图文消息',
