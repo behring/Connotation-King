@@ -24,20 +24,20 @@ on_text do
 
       jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<cartoon.id.to_s
 
-      # [
-      #   {
-      #    :title => cartoon.title,
-      #    :description => cartoon.description,
-      #    :picture_url => cartoon.picture_url,
-      #    :url => jump_url
-      #   }
-      #   # ,{
-      #   #  :title => '这是第二个图文消息',
-      #   #  :description => 'desc1',
-      #   #  :picture_url => 'pic url1',
-      #   #  :url => 'url1'
-      #   # }
-      # ]
+      [
+        {
+         :title => cartoon.title,
+         :description => cartoon.description,
+         :picture_url => cartoon.picture_url,
+         :url => jump_url
+        }
+        # ,{
+        #  :title => '这是第二个图文消息',
+        #  :description => 'desc1',
+        #  :picture_url => 'pic url1',
+        #  :url => 'url1'
+        # }
+      ]
 
     when "2"
         joke_url = DBHelper.get_last_joke_url
