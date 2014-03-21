@@ -2,7 +2,7 @@ class GrabData
 	def self.grab_joke(joke_url)
 		
 		joke = Joke.new
-		page_joke = Nokogiri::HTML(open(joke_url),nil,'GBK')
+		page_joke = Nokogiri::HTML(open(URI.encode(joke_url)),nil,'GBK')
 
 		jokes_content = ""
 		page_joke.css('span#text110 p').each do |content|
@@ -33,7 +33,7 @@ class GrabData
 	def self.grab_cartoon(cartoon_url)
 		cartoon = Cartoon.new
 		
-		page_cartoon = Nokogiri::HTML(open(cartoon_url))
+		page_cartoon = Nokogiri::HTML(open(URI.encode(cartoon_url)))
 		img_node = page_cartoon.css('div#imgshowdiv img')[0]
 		if img_node==nil
 			random_cartoon_url = page_cartoon.css('div.zw_page2 a')[0]['href']
