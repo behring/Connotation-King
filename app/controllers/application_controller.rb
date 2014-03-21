@@ -17,7 +17,7 @@ on_text do
 
       cartoon = GrabData.grab_cartoon(cartoon_url)
       DBHelper.add_cartoon(cartoon)
-      encode_picture_url = Base64.encode64(cartoon.picture_url).gsub!(' ', '')
+      encode_picture_url = Base64.encode64(cartoon.picture_url.to_s).gsub("\n","")
       jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<encode_picture_url
 
       # jump_url = "http://connotation-king.herokuapp.com/cartoon/aHR0cDovL3d3My5zaW5haW1nLmNuL2xhcmdlLzZiMjY5ZDdkdHcxZWE2eTRz%20eGo2M2oyMGU2MjhkazY4LmpwZw=="
