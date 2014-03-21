@@ -10,7 +10,7 @@ class DBHelper
 
 	def self.get_random_joke_url
 
-		if Cartoon.count>0
+		if Joke.count>0
 			offset = Random.rand(Joke.count)
 			random_joke = Joke.first(:offset => offset)
 			if random_joke.other_urls != nil
