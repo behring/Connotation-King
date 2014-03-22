@@ -6,7 +6,7 @@ get '/test' do
 
 	node_jzw = page.css('div.jzw_container ul li')[49];
 	#抓取急转弯问题
-	node_qustion = node_jzw.css('span')[0].to_s
+	node_qustion = node_jzw.css('span')[0].text.to_s
 	qustion = node_qustion.encode("UTF-8")
 	
 

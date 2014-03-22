@@ -68,7 +68,7 @@ class GrabData
 		page.css('div.jzw_container ul li').each_with_index do |node_jzw,index|
 
 			#抓取急转弯问题
-			node_qustion = node_jzw.css('span')[0].to_s
+			node_qustion = node_jzw.css('span')[0].text.to_s
 			qustion = node_qustion.encode("UTF-8")
 			#抓取急转弯答案
 			node_answer = node_jzw.css('span')[1].to_s
