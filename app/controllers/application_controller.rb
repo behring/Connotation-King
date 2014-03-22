@@ -8,7 +8,7 @@ on_text do
       "您好,我是内含王,请回复数字选择您感兴趣的节目:
       1 内涵漫画
       2 幽默笑话
-      3 心灵物语"
+      3 脑筋急转弯"
     when "1"
       cartoon_url = DBHelper.get_random_cartoon_url
       if cartoon_url == nil
@@ -50,11 +50,10 @@ on_text do
         joke.content
 
     when "3"
-        
-      # "你发送了如下内容:  #{user_input_content}"
+        "节目开发中，尽请期待！感谢您关注#内含王#"
 
-      "你发送了如下内容:  #{user_input_content}\n
-      笑话数量：#{DBHelper.count_joke}个\n
+    when "cx"
+      "笑话数量：#{DBHelper.count_joke}个\n
       漫画数量：#{DBHelper.count_cartoon}个
       "
     else
@@ -69,7 +68,7 @@ on_subscribe do
     请回复数字选择您感兴趣的节目：\n
     1 内涵漫画\n
     2 幽默笑话\n
-    3 心灵物语\n"
+    3 脑筋急转弯\n"
 end
 
 on_unsubscribe do
