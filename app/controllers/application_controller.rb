@@ -8,7 +8,7 @@ on_text do
   case content_type
     
     when USER_CONTENT_TYPE_WHY
-      "您好,我是内含王,请回复数字选择您感兴趣的节目:\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4 在线听歌\n(如果“内含王”没有回复您，哪他一定是睡着了或太忙了，请再多发几遍吧!)"
+      "您好,我是内含王,请回复数字选择您感兴趣的节目:\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4 在线听歌\n(如果“内含王”没有回复您，那她一定是睡着了或太忙了，请再多发几遍吧!)"
     when USER_CONTENT_TYPE_CARTOON
       cartoon_url = DBHelper.get_random_cartoon_url
       if cartoon_url == nil
