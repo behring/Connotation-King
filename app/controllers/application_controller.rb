@@ -11,7 +11,9 @@ on_text do
       "您好,我是内含王,请回复数字选择您感兴趣的节目:
       1 内涵漫画
       2 幽默笑话
-      3 脑筋急转弯"
+      3 脑筋急转弯
+      4 在线听歌
+      "
     when USER_CONTENT_TYPE_CARTOON
       cartoon_url = DBHelper.get_random_cartoon_url
       if cartoon_url == nil
@@ -53,13 +55,18 @@ on_text do
         "#{jzw.qustion}\n(急转弯编号:#{jzw.page_row_number})"
 
     when USER_CONTENT_TYPE_JZW_ANSWER
-        # "节目开发中，尽请期待！感谢您关注#内含王#"
+        
         answer = DBHelper.get_jzw_answer(user_input_content)
         if answer !=nil
           "#{answer}\n(急转弯编号:#{user_input_content})"    
         else
           "很抱歉，没有找到您要的答案哦T_T"
         end
+
+
+    when USER_CONTENT_TYPE_MUSIC
+        "节目开发中，尽请期待！感谢您关注#内含王#"
+    
     when USER_CONTENT_TYPE_CX
       "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个
       "
@@ -75,7 +82,8 @@ on_subscribe do
     请回复数字选择您感兴趣的节目：\n
     1 内涵漫画\n
     2 幽默笑话\n
-    3 脑筋急转弯\n"
+    3 脑筋急转弯\n
+    4.在线听歌"
 end
 
 on_unsubscribe do
