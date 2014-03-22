@@ -61,6 +61,10 @@ class DBHelper
 			answer: jzw.answer)
 	end
 
+	def self.get_jzw_answer(page_row_number)
+		Jzw.find_by(:page_row_number => page_row_number).answer
+	end
+
 	def self.count_jzw
 		Jzw.count
 	end
