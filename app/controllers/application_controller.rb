@@ -53,8 +53,7 @@ on_text do
         "节目开发中，尽请期待！感谢您关注#内含王#"
 
     when "cx"
-      "笑话数量：#{DBHelper.count_joke}个\n
-      漫画数量：#{DBHelper.count_cartoon}个
+      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个
       "
     else
       "回复“?”你就知道啦"

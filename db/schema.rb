@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321030734) do
+ActiveRecord::Schema.define(version: 20140322025739) do
 
   create_table "cartoons", force: true do |t|
     t.string   "title"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20140321030734) do
     t.text     "content"
     t.string   "url"
     t.string   "other_urls"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jzws", force: true do |t|
+    t.string  "page_row_number"
+    t.string   "qustion"
+    t.text     "answer"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

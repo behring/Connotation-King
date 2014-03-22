@@ -1,4 +1,6 @@
 JOKE_DEFAULT_URL = "http://www.jokeji.cn/jokehtml/bxnn/201403172304105.htm"
 CARTOON_DEFAULT_URL = "http://www.xiaojiulou.com/sexi/3639.html"
+JZW_DEFAULT_URL = "http://www.2345.com/jzw/"
+
 WEIXIN_IMAGE_QR_CODE = "http://d.pcs.baidu.com/thumbnail/9de1a321ac50de0324a729c7293b19d0?fid=3087922199-250528-746216742765111&time=1395417732&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-NkAEXme2%2Bx5lNs1sqnBrvcBCIU8%3D&expires=8h&prisign=amMwnVibYf88f2TB/V4FApSN5rJwOqzRhL6Now25HScufo4OuxITn8BmzguRNe+KmAZpJ2usCIioNkCYevhcQqo5rHOtKS4vAcdPT77uxjF528u8yMEWFMKCU55gdZOPF+eThF0cEZi425GOa9qpEaDRxs+MDqkRfspRr3AZWqx2RegzuVnzaX3A3Rtz2/Obwq48P8v2auVRdGeENY3ooTQSVdTCPk1KkLBWDX3FjqmXkU0myYcdOg==&r=431888770&size=c10000_u10000&quality=100"
 WEXIN_GIF_MLS = "http://d.pcs.baidu.com/thumbnail/97f6a1ae11e638887c1ca0ba5d334e47?fid=3087922199-250528-1103721115426035&time=1395417732&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-1LMPlDlEJjq%2Bze9RfjXdeuNFXfg%3D&expires=8h&prisign=amMwnVibYf88f2TB/V4FApSN5rJwOqzRhL6Now25HScufo4OuxITn8BmzguRNe+KmAZpJ2usCIioNkCYevhcQqo5rHOtKS4vAcdPT77uxjF528u8yMEWFMKCU55gdZOPF+eThF0cEZi425GOa9qpEaDRxs+MDqkRfspRr3AZWqx2RegzuVnzaX3A3Rtz2/Obwq48P8v2auVRdGeENY3ooTQSVdTCPk1KkLBWDX3FjqmXkU0myYcdOg==&r=333802578&size=c10000_u10000&quality=100"

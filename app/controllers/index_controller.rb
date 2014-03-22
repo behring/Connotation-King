@@ -1,3 +1,24 @@
+get '/test' do
+	page = Nokogiri::HTML(open(URI.encode("http://www.2345.com/jzw/1.htm")))
+	node_jzw = page.css('div.jzw_container ul li')[0];
+
+
+	#抓取急转弯问题
+	node_qustion = node_jzw.css('span')[0].to_s
+	qustion = node_qustion.encode("UTF-8")
+	
+
+	#抓取急转弯答案
+	node_answer = node_jzw.css('span')[1].to_s
+	node_answer = node_answer.encode("UTF-8")
+	parser = Nokogiri.parse(node_answer)
+	answer = parser.xpath('//a[@onclick]').first.attributes['onclick'].content.match(/'([^']+)/)[1]
+	
+
+	"#{qustion}  :#{answer}"
+end
+
+
 get '/index' do
 "你好，我是内含王！"
 haml :postgres_test

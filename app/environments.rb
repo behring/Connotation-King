@@ -8,7 +8,6 @@ require 'timers'
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 
-
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
 require_relative './constant'
