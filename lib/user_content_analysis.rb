@@ -19,7 +19,7 @@ class ContentAnalysis
 				if page_row_array.size == 2
 					page_number = page_row_array[0].to_i
 					row_number = page_row_array[1].to_i
-					if page_number>0&&page_number<75&&row_number>=0&&page_number<50
+					if page_number>0&&page_number<75&&row_number>=0&&row_number<50
 						USER_CONTENT_TYPE_JZW_ANSWER
 					else
 						USER_CONTENT_TYPE_ERROR
