@@ -50,13 +50,13 @@ on_text do
 
     when USER_CONTENT_TYPE_JZW
         jzw = GrabData.grab_jzw
-        "#{jzw.qustion}(急转弯编号:#{jzw.page_row_number})"
+        "#{jzw.qustion}\n(急转弯编号:#{jzw.page_row_number})"
 
     when USER_CONTENT_TYPE_JZW_ANSWER
         # "节目开发中，尽请期待！感谢您关注#内含王#"
         answer = DBHelper.get_jzw_answer(user_input_content)
         if answer !=nil
-          "#{answer}(急转弯编号:#{user_input_content})"    
+          "#{answer}\n(急转弯编号:#{user_input_content})"    
         else
           "很抱歉，没有找到您要的答案哦T_T"
         end
