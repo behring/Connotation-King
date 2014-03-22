@@ -10,6 +10,8 @@ class ContentAnalysis
 				USER_CONTENT_TYPE_JOKE
 			when "3"
 				USER_CONTENT_TYPE_JZW
+			when "4"
+				USER_CONTENT_TYPE_MUSIC
 			when "cx"
 				USER_CONTENT_TYPE_CX
 			else
