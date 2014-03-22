@@ -1,4 +1,4 @@
-token "connotation_king"
+# token "connotation_king"
 
 
 on_text do
@@ -16,7 +16,7 @@ on_text do
       end
 
       cartoon = GrabData.grab_cartoon(cartoon_url)
-      DBHelper.add_cartoon(cartoon)
+      
       #需要从数据库查询出来才会有id
       cartoon = Cartoon.find_by url:cartoon.url
 
@@ -46,14 +46,16 @@ on_text do
         end
 
         joke = GrabData.grab_joke(joke_url)        
-        DBHelper.add_joke(joke)
+        
         joke.content
 
     when "3"
-        "节目开发中，尽请期待！感谢您关注#内含王#"
+        # "节目开发中，尽请期待！感谢您关注#内含王#"
+        jzw = GrabData.grab_jzw
+        "#{jzw.qustion}(急转弯编号:#{jzw.page_row_number})"
 
     when "cx"
-      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个
+      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个
       "
     else
       "回复“?”你就知道啦"

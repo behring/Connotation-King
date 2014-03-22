@@ -1,8 +1,10 @@
 get '/test' do
 	page = Nokogiri::HTML(open(URI.encode("http://www.2345.com/jzw/1.htm")))
-	node_jzw = page.css('div.jzw_container ul li')[0];
+	# node_jzw_count = page.css('div.jzw_container ul li').size
+	# "#{node_jzw_count}"
 
 
+	node_jzw = page.css('div.jzw_container ul li')[49];
 	#抓取急转弯问题
 	node_qustion = node_jzw.css('span')[0].to_s
 	qustion = node_qustion.encode("UTF-8")

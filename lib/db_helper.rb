@@ -52,4 +52,18 @@ class DBHelper
 		end
 		
 	end
+
+
+
+
+	def self.add_jzw(jzw)
+		Jzw.create(page_row_number: jzw.page_row_number, qustion: jzw.qustion,
+			answer: jzw.answer)
+	end
+
+	def self.count_jzw
+		Jzw.count
+	end
+
+
 end
