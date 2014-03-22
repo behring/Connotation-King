@@ -11,8 +11,9 @@ class DBHelper
 	def self.get_random_joke_url
 
 		if Joke.count>0
-			offset = Random.rand(Joke.count)
-			random_joke = Joke.first(:offset => offset)
+			# offset = Random.rand(Joke.count)
+			# random_joke = Joke.first(:offset => offset)
+			random_joke = Joke.last
 			if random_joke.other_urls != nil
 				other_urls_array = random_joke.other_urls.split
 				random_number = Random.rand(0..1)
@@ -38,8 +39,9 @@ class DBHelper
 
 	def self.get_random_cartoon_url
 		if Cartoon.count>0
-			offset = Random.rand(Cartoon.count)
-			random_cartoon = Cartoon.first(:offset => offset)
+			# offset = Random.rand(Cartoon.count)
+			# random_cartoon = Cartoon.first(:offset => offset)
+			random_cartoon = Cartoon.last
 			if random_cartoon.other_urls != nil
 				other_urls_array = random_cartoon.other_urls.split
 				random_number = Random.rand(0..2)
