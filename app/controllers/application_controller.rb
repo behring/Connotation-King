@@ -8,12 +8,7 @@ on_text do
   case content_type
     
     when USER_CONTENT_TYPE_WHY
-      "您好,我是内含王,请回复数字选择您感兴趣的节目:
-      1 内涵漫画
-      2 幽默笑话
-      3 脑筋急转弯
-      4 在线听歌
-      "
+      "您好,我是内含王,请回复数字选择您感兴趣的节目:\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4 在线听歌\n(如果您返送消息“内含王”没有回复您，哪他一定是睡着了或太忙了，请再多发几遍吧!)"
     when USER_CONTENT_TYPE_CARTOON
       cartoon_url = DBHelper.get_random_cartoon_url
       if cartoon_url == nil
@@ -78,12 +73,7 @@ end
 
 
 on_subscribe do
-    "感谢您订阅“内含王”\n
-    请回复数字选择您感兴趣的节目：\n
-    1 内涵漫画\n
-    2 幽默笑话\n
-    3 脑筋急转弯\n
-    4.在线听歌"
+    "感谢您订阅“内含王”\n请回复数字选择您感兴趣的节目：\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4.在线听歌"
 end
 
 on_unsubscribe do
