@@ -4,7 +4,7 @@ class DBHelper
 		Joke.create(title: joke.title,content: joke.content, url: joke.url, other_urls: joke.other_urls)
 	
 	end
-	def self.count 
+	def self.count_joke 
 		Joke.count
 	end
 
@@ -78,7 +78,11 @@ class DBHelper
 	end
 
 	def self.get_music(singer,song)
+		Music.where("singer = ? AND song = ?",singer, song)
 	end
 
+		def self.count_music
+		Music.count
+	end
 
 end

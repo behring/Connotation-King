@@ -63,7 +63,7 @@ on_text do
         "节目开发中，尽请期待！感谢您关注#内含王#"
         # "请输入歌手名+歌曲名(例如:张杰+他不懂)"
     when USER_CONTENT_TYPE_MUSIC_SEARCH
-        singer_song_array = content.split('+')
+        singer_song_array = user_input_content.split('+')
         singer = singer_song_array[0]
         song = singer_song_array[1]
         music = BaiduMusic.get_music(singer,song)
@@ -72,7 +72,7 @@ on_text do
 
 
     when USER_CONTENT_TYPE_CX
-      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个
+      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个
       "
     else
       "回复“?”你就知道啦"
