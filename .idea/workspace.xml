@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cartoon.haml" afterPath="$PROJECT_DIR$/app/views/cartoon.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/connotation-king.iml" afterPath="$PROJECT_DIR$/.idea/connotation-king.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/constant.rb" afterPath="$PROJECT_DIR$/app/constant.rb" />
-    </list>
+    <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="" />
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,7 +26,7 @@
       <file leaf-file-name="cartoon.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="59" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1278409" vertical-offset="0" max-vertical-offset="704">
+            <state line="6" column="59" selection-start="107" selection-end="107" vertical-scroll-proportion="0.15332198" vertical-offset="0" max-vertical-offset="587">
               <folding />
             </state>
           </provider>
@@ -56,8 +52,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -141,7 +138,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
@@ -158,7 +155,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="705" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -207,7 +204,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1278409" vertical-offset="0" max-vertical-offset="704">
+        <state line="6" column="59" selection-start="107" selection-end="107" vertical-scroll-proportion="0.15332198" vertical-offset="0" max-vertical-offset="587">
           <folding />
         </state>
       </provider>
