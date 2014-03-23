@@ -21,4 +21,4 @@ curl -H 'Content-type:text/xml' -d@- localhost:4567/weixin << EOF
 </xml>
 EOF
 
-http://connotation-king.herokuapp.com/cartoon/aHR0cDovL3d3My5zaW5haW1nLmNuL2xhcmdlLzZiMjY5ZDdkdHcxZTllb3RieTUwaWoyMGM3MGVybXliLmpwZw==
+http://zhangmenshiting.baidu.com/data2/music/33887958/33887958.mp3?xcode=50888a481706879d901cdf188a2622ed695b54de9cff0233 

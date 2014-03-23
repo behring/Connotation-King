@@ -18,9 +18,25 @@ get '/test' do
 	
 
 	# "#{qustion}  :#{answer}"
+	# song = "冰雨"
+	# singer = "刘德华"
+	# url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
+	# page = Nokogiri::XML(open(URI.encode(url)))
+	# node_encode_text = page.xpath('/result/url/encode').text
+	# node_decode_text = page.xpath('/result/url/decode').text
+	# reg_str = /http:\/\/([\w+\.]+)(\/(\w+\/)+)/
+	# encode_result = reg_str.match(node_encode_text)
+	# decode_result = node_decode_text.split('&')[0]
 
-	joke_url = DBHelper.get_random_joke_url
-	"#{joke_url}"
+	# count = page.xpath("/result/p2p/type").text
+	# "#{count.class}"
+
+	song = "冰雨"
+	singer = "刘德华"
+	music = BaiduMusic.get_music(singer,song)
+	"#{music.url}\n\n\n\n\n#{music.durl}"
+
+
 end
 
 

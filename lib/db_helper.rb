@@ -4,7 +4,7 @@ class DBHelper
 		Joke.create(title: joke.title,content: joke.content, url: joke.url, other_urls: joke.other_urls)
 	
 	end
-	def self.count_joke
+	def self.count 
 		Joke.count
 	end
 
@@ -69,6 +69,15 @@ class DBHelper
 
 	def self.count_jzw
 		Jzw.count
+	end
+
+
+	def self.add_music(music)
+		Music.create(singer: music.singer, song: music.song,
+			url: music.url,durl: music.durl,type: music.type)
+	end
+
+	def self.get_music(singer,song)
 	end
 
 

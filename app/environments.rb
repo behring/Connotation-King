@@ -8,16 +8,22 @@ require 'timers'
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 
+
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
 require_relative '../app/models/jzw'
-require_relative './constant'
+require_relative '../app/models/music'
+
 require_relative '../lib/data_grab'
 require_relative '../lib/db_helper'
+require_relative '../lib/baidu_music'
 require_relative '../lib/user_content_analysis'
 
 require_relative '../app/controllers/index_controller'
 require_relative '../app/controllers/application_controller'
+
+require_relative './constant'
+
 
 
 
