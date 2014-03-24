@@ -22,6 +22,10 @@ td {
 	text-align: right;
 }
 
+.hide {
+	display: none;
+}
+
 .donation {
 	color: #c43cc4;
 }
