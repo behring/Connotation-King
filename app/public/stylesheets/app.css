@@ -9,6 +9,10 @@ img{
 	height: auto;
 	max-width: 100%;
 }
+td {
+	vertical-align: top;
+}
+
 .td30 {
 	width: 30%
 }
