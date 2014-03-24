@@ -11,6 +11,7 @@ img{
 }
 td {
 	vertical-align: top;
+	text-align: left;
 }
 
 .td30 {
@@ -19,4 +20,8 @@ td {
 
 .right {
 	text-align: right;
+}
+
+.donation {
+	color: #c43cc4;
 }
