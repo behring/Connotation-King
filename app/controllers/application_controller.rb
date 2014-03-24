@@ -72,10 +72,9 @@ on_text do
 
 
     when USER_CONTENT_TYPE_CX
-      user_name = params[:ToUserName]
-      my_name = params[:FromUserName]
-      "#{user_name} :  #{my_name}"
-      # "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个"
+      # user_name = params[:FromUserName]
+      # "#{user_name}"
+      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个"
     else
       "回复“?”你就知道啦"
   end

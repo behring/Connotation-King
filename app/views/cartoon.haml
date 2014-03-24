@@ -3,14 +3,14 @@
 %body
   %h1
     =title
-  %div.hide
+  %div
     %table
       %tr
         %td
           %h3.donation
             = "如果您真的喜欢我们的节目,请为我们捐一分钱表示您的支持!"
         %td.td30
-          %a{:href=>"http://www.baidu.com"}
+          %a{:href=>"http://www.baidu.com",:onclick=>"alert()"}
             %h4.red
               = "为我捐1分钱"
             %img{:src => '/images/mls.gif'}
