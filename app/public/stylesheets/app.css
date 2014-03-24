@@ -6,6 +6,13 @@ body {
 img{
 	height: auto;
 	max-width: 100%;
+}
+
+.padding-horizontal {
 	padding-left: 10%;
 	padding-right: 10%;
+}
+
+.right {
+	text-align: right;
 }
