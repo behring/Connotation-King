@@ -1,12 +1,12 @@
 class BaiduMusic
 	def self.get_music(singer,song)
-		music = DBHelper.get_music(singer,song)
-		if music != nil
-			music
-		else
+		# music = DBHelper.get_music(singer,song)
+		# if music != nil
+		# 	music
+		# else
 			#go to baidu interface get a music
 			music = request_baidu_inteface(singer,song)
-		end
+		# end
 	end
 
 
@@ -19,7 +19,7 @@ class BaiduMusic
 		
 
 		count = page.xpath("/result/count")
-		p "----------------------------3---------#{count.class}--------------------------------"
+		p "----------------------------3---------#{count.inner_text}--------------------------------"
 		
 		if count>0
 			p "-------------------------------has music----------------------------------"
