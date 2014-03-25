@@ -42,7 +42,7 @@ class BaiduMusic
 			music.song = song
 	
 
-			DBHelper.add_music(music)
+			# DBHelper.add_music(music)
 			music
 		else
 			nil

@@ -28,6 +28,9 @@ group :development do
 	#provides a Shell for Sinatra so we can interact with our application
 	#可以在terminal中给数据库添加数据，测试使用
  	gem 'tux'
+
+	# gem 'pg'
+
 end
 
 group :production do
