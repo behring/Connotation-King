@@ -73,8 +73,7 @@ class DBHelper
 
 
 	def self.add_music(music)
-		Music.create(singer: music.singer, song: music.song,
-			url: music.url,durl: music.durl,type: music.type)
+		Music.create(singer: music.singer, song: music.song,url: music.url,durl: music.durl)
 	end
 
 	def self.get_music(singer,song)

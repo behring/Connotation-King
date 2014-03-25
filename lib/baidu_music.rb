@@ -37,10 +37,10 @@ class BaiduMusic
 				end
 				
 			end
-			type = page.xpath("/result/p2p/type").text
+			# type = page.xpath("/result/p2p/type").text
 			music.singer = singer
 			music.song = song
-			music.type = type
+	
 
 			DBHelper.add_music(music)
 			music

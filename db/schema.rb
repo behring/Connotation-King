@@ -44,7 +44,6 @@ ActiveRecord::Schema.define(version: 20140323134556) do
     t.string   "song"
     t.string   "url"
     t.string   "durl"
-    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

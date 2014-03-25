@@ -5,7 +5,6 @@ class CreateMusics < ActiveRecord::Migration
    	 t.string :song
      t.string :url
      t.string :durl
-     t.string :type
      t.timestamps
    end
  end
