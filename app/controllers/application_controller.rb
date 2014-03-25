@@ -71,7 +71,7 @@ on_text do
         # "#{singer}:#{song}"
         # "#{music.url}"
         {
-         :title => music.song,
+         :title => "演唱:#{song}",
          :description => "演唱:#{singer}",
          :music_url => music.url,
          :hq_music_url => music.durl
