@@ -16,7 +16,7 @@ class BaiduMusic
 		url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
 		p "--------------------------------1-----#{url}--------------------------------"
 		
-		page = Nokogiri::XML(open(URI.encode(url)))
+		page = Nokogiri::XML(open(url))
 		# node_encode = page.xpath("/result/url/encode").text
 		p "--------------------------------2-----#{page.inner_text}---------------------------------"
 		
