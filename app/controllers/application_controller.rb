@@ -68,26 +68,24 @@ on_text do
         song = singer_song_array[1]
         music = BaiduMusic.get_music(singer,song)
         #waiting interface
-        # "#{singer}:#{song}"
-        # "#{music.url}"
-        # if music !=nil
-        #   {
-        #     :title => music.song,
-        #     :description => music.singer,
-        #     :music_url => music.url,
-        #     :hq_music_url => music.durl
-        #   }
-        # else
+        if music !=nil
+          {
+            :title => music.song,
+            :description => music.singer,
+            :music_url => music.url,
+            :hq_music_url => music.durl
+          }
+        else
           
-        #     "没有搜索到您要的歌曲，请试试别的吧!\n(歌手名+歌曲名)"
+            "没有搜索到您要的歌曲，请试试别的吧!\n(歌手名+歌曲名)"
             
-        # end
-        {
-          :title => "I miss you",
-          :description => "behring",
-          :music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140",
-          :hq_music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140"
-         }         
+        end
+        # {
+        #   :title => "I miss you",
+        #   :description => "behring",
+        #   :music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140",
+        #   :hq_music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140"
+        #  }         
 
     when USER_CONTENT_TYPE_CX
       # user_name = params[:FromUserName]
