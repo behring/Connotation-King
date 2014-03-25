@@ -70,14 +70,13 @@ on_text do
         #waiting interface
         # "#{singer}:#{song}"
         # "#{music.url}"
-        music_message = {
+        {
          :title => music.song,
          :description => "演唱:#{singer}",
          :music_url => music.url,
          :hq_music_url => music.durl
         }
 
-        music_message
 
     when USER_CONTENT_TYPE_CX
       # user_name = params[:FromUserName]
