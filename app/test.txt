@@ -41,19 +41,18 @@ EOF
 <xml>
   <ToUserName><![CDATA[fromUser]]></ToUserName>
   <FromUserName><![CDATA[toUser]]></FromUserName>
-  <CreateTime><![CDATA[1395724957]]></CreateTime>
-  <MsgType><![CDATA[news]]></MsgType>
+  <CreateTime><![CDATA[1395725245]]></CreateTime>
+  <MsgType><![CDATA[music]]></MsgType>
   <Music>
     <Title><![CDATA[冰雨]]></Title>
     <Description><![CDATA[刘德华]]></Description>
     <MusicUrl><![CDATA[http://zhangmenshiting.baidu.com/data2/music/33887958/33887958.mp3?xcode=a2e2c5736f784f0aef0489b2de9193ab695b54de9cff0233]]></MusicUrl>
     <HQMusicUrl><![CDATA[http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140]]></HQMusicUrl>
-    <FuncFlag>
-      0
-    </FuncFlag>
   </Music>
+  <FuncFlag>
+    0
+  </FuncFlag>
 </xml>
-
 
 
 http://zhangmenshiting.baidu.com/data2/music/33887958/33887958.mp3?xcode=50888a481706879d901cdf188a2622ed695b54de9cff0233 
