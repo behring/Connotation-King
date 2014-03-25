@@ -19,7 +19,10 @@ class BaiduMusic
 		# response = HTTParty.get(URI.encode(url))
 		
 		# page = Nokogiri::XML(response.body)
-		page = Nokogiri::XML(open(URI.encode(url)),nil,'UTF-8')
+		# page = Nokogiri::XML(open(URI.encode(url)),nil,'UTF-8')
+	url_text = Net::HTTP.get(URI.parse URI.encode(url))
+	page = Nokogiri::XML(url_text)
+
 		# .encode("UTF-8")
 		# node_encode = page.xpath("/result/url/encode").text
 		
