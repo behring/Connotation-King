@@ -20,8 +20,8 @@ class BaiduMusic
 		node_encode = page.xpath("/result/url/encode").text
 		p "--------------------------------2-----#{node_encode}--------------------------------"
 		
-		count = page.xpath("/result/count").text.to_i
-		p "----------------------------3---------#{count}--------------------------------"
+		count = page.xpath("/result/count")
+		p "----------------------------3---------#{count.count}--------------------------------"
 		
 		if count>0
 			p "-------------------------------has music----------------------------------"
