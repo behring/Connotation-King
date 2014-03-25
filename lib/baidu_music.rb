@@ -16,6 +16,7 @@ class BaiduMusic
 		page = Nokogiri::XML(open(URI.encode(url)))
 		count = page.xpath('/result/count').text.to_i
 		if count>0
+			p "-------------------------------has music----------------------------------"
 			music = Music.new
 			reg_str = /http:\/\/([\w+\.]+)(\/(\w+\/)+)/
 
@@ -42,9 +43,11 @@ class BaiduMusic
 			music.song = song
 	
 
-			# DBHelper.add_music(music)
+			DBHelper.add_music(music)
 			music
 		else
+			p "-------------------------------no music----------------------------------"
+			
 			nil
 		end
 		
