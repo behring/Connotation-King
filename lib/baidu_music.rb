@@ -19,7 +19,8 @@ class BaiduMusic
 		# response = HTTParty.get(URI.encode(url))
 		
 		# page = Nokogiri::XML(response.body)
-		page = Nokogiri::XML(open(URI.encode(url)),nil,'gb2312')
+		page = Nokogiri::XML(open(URI.encode(url)),nil,'UTF-8')
+		# .encode("UTF-8")
 		# node_encode = page.xpath("/result/url/encode").text
 		
 		count = page.xpath("/result/count").text.to_i
