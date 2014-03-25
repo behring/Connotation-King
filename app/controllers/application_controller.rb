@@ -73,7 +73,7 @@ on_text do
         if music !=nil
           {
             :title => music.song,
-            :description => "演唱:#{singer}",
+            :description => music.singer,
             :music_url => music.url,
             :hq_music_url => music.durl
           }
