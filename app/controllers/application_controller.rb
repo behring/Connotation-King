@@ -79,10 +79,11 @@ on_text do
           }
         else
           {
-            :title => "I miss you",
-            :description => "behring",
-            :music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140",
-            :hq_music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140"
+            "没有搜索到您要的歌曲，请试试别的吧!\n(输入格式：歌手名+歌曲名)"
+            # :title => "I miss you",
+            # :description => "behring",
+            # :music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140",
+            # :hq_music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140"
           }
         end
         
