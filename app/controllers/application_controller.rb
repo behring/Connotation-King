@@ -70,13 +70,22 @@ on_text do
         #waiting interface
         # "#{singer}:#{song}"
         # "#{music.url}"
-        {
-         :title => "演唱:#{song}",
-         :description => "演唱:#{singer}",
-         :music_url => music.url,
-         :hq_music_url => music.durl
-        }
-
+        if music !=nil
+          {
+            :title => music.song,
+            :description => "演唱:#{singer}",
+            :music_url => music.url,
+            :hq_music_url => music.durl
+          }
+        else
+          {
+            :title => "I miss you",
+            :description => "behring",
+            :music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140",
+            :hq_music_url => "http://zhangmenshiting2.baidu.com/data2/music/2314083/2314083.mp3?xcode=a2e2c5736f784f0a94e3da50e93559ccf0a8144ef99e2140"
+          }
+        end
+        
 
     when USER_CONTENT_TYPE_CX
       # user_name = params[:FromUserName]
