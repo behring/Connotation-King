@@ -17,7 +17,7 @@ class BaiduMusic
 		p "--------------------------------1-----#{url}--------------------------------"
 		
 		page = Nokogiri::XML(open(URI.encode(url)))
-		node_encode = page.xpath("/result/url/encode").text
+		node_encode = page.xpath("//url/encode").text
 		p "--------------------------------2-----#{node_encode}--------------------------------"
 		
 		count = page.xpath("/result/count")
