@@ -18,7 +18,7 @@ class BaiduMusic
 		p "--------------------------------1-----#{page.class}--------------------------------"
 		
 
-		count = page.xpath("/result/count").first
+		count = page.xpath("/result/count")[0]
 		p "----------------------------3---------#{count.inner_text}--------------------------------"
 		
 		if count>0
