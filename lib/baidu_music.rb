@@ -14,11 +14,11 @@ class BaiduMusic
 	def self.request_baidu_inteface(singer,song)
 
 		url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
-		
+		page = Nokogiri::XML(open(URI.encode(url)))
 		p "--------------------------------1-----#{page.xpath("/result/url/encode").text}--------------------------------"
 		
 
-		page = Nokogiri::XML(open(URI.encode(url)))
+		
 
 		p "--------------------------------2-----#{page.xpath("/result/count").text}--------------------------------"
 		
