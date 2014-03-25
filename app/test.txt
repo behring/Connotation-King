@@ -10,6 +10,7 @@ curl -H 'Content-type:text/xml' -d@- http://stark-plateau-3435.herokuapp.com:80/
 EOF
 
 
+
 curl -H 'Content-type:text/xml' -d@- localhost:4567/weixin << EOF
 <xml>
  <ToUserName><![CDATA[toUser]]></ToUserName>
@@ -20,5 +21,7 @@ curl -H 'Content-type:text/xml' -d@- localhost:4567/weixin << EOF
  <MsgId>1234567890123456</MsgId>
 </xml>
 EOF
+
+
 
 http://zhangmenshiting.baidu.com/data2/music/33887958/33887958.mp3?xcode=50888a481706879d901cdf188a2622ed695b54de9cff0233 

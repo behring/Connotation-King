@@ -60,16 +60,24 @@ on_text do
 
 
     when USER_CONTENT_TYPE_MUSIC
-        "节目开发中，尽请期待！感谢您关注#内含王#"
-        # "请输入歌手名+歌曲名(例如:张杰+他不懂)"
+        # "节目开发中，尽请期待！感谢您关注#内含王#"
+        "请输入歌手名+歌曲名(例如:张杰+他不懂)"
     when USER_CONTENT_TYPE_MUSIC_SEARCH
         singer_song_array = user_input_content.split('+')
         singer = singer_song_array[0]
         song = singer_song_array[1]
         music = BaiduMusic.get_music(singer,song)
         #waiting interface
-        "#{singer}:#{song}"
+        # "#{singer}:#{song}"
+        # "#{music.url}"
+        music_message = {
+         :title => music.song,
+         :description => "演唱:#{singer}",
+         :music_url => music.url,
+         :hq_music_url => music.durl
+        }
 
+        music_message
 
     when USER_CONTENT_TYPE_CX
       # user_name = params[:FromUserName]

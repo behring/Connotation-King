@@ -78,7 +78,9 @@ class DBHelper
 	end
 
 	def self.get_music(singer,song)
-		Music.where("singer = ? AND song = ?",singer, song)
+		music = Music.where("singer = ? AND song = ?",singer, song).first
+
+
 	end
 
 		def self.count_music

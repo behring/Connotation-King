@@ -42,7 +42,7 @@ end
 
 get '/index' do
 "你好，我是内含王！"
-haml :postgres_test
+#haml :postgres_test
 end
 
 get '/cartoon/:id' do

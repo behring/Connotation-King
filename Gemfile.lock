@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: http://ruby.taobao.org/
   specs:
     activemodel (4.0.4)
       activesupport (= 4.0.4)
@@ -25,7 +25,7 @@ GEM
     hitimes (1.2.1)
     i18n (0.6.9)
     json (1.8.1)
-    mini_portile (0.5.2)
+    mini_portile (0.5.3)
     minitest (4.7.5)
     multi_json (1.9.2)
     nokogiri (1.6.1)
@@ -69,17 +69,14 @@ GEM
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
     tzinfo (0.3.39)
-    wei-backend (0.1.1)
-      haml (~> 4.0.4)
-      json (~> 1.8)
-      nokogiri (~> 1.6.0)
-      sinatra (~> 1.4.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord
+  haml
+  json
   nokogiri
   pg
   shotgun
@@ -90,4 +87,3 @@ DEPENDENCIES
   sqlite3
   timers (~> 2.0.0)
   tux
-  wei-backend

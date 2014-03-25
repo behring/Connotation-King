@@ -1,11 +1,12 @@
-# source 'http://ruby.taobao.org'
-source 'http://rubygems.org'
+source 'http://ruby.taobao.org'
+#source 'http://rubygems.org'
 ruby "2.0.0"
 
 gem 'sinatra'
 #微信公众平台
-gem 'wei-backend'
-
+# gem 'wei-backend'
+gem 'haml'
+gem 'json'
 #grab internet data
 gem 'nokogiri'
 
