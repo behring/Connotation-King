@@ -19,8 +19,9 @@ gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 
 #http://rubydoc.info/gems/timers/2.0.0/frames
-gem "timers", "~> 2.0.0"
+# gem "timers", "~> 2.0.0"
 
+gem "httparty"
 
 group :development do
 	gem 'shotgun'
