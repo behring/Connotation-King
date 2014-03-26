@@ -1,4 +1,4 @@
-# token "connotation_king"
+token "connotation_king"
 
 
 on_text do
