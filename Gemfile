@@ -1,6 +1,6 @@
-# source 'http://ruby.taobao.org'
-source 'http://rubygems.org'
-ruby "2.0.0"
+source 'http://ruby.taobao.org'
+# source 'http://rubygems.org'
+# ruby "2.0.0"
 
 gem 'sinatra'
 #微信公众平台
