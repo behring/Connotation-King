@@ -1,4 +1,4 @@
-token "connotation_king"
+token "zhaolin"
 
 
 on_text do
@@ -19,7 +19,7 @@ on_text do
       #需要从数据库查询出来才会有id
       cartoon = Cartoon.find_by url:cartoon.url
 
-      jump_url = "http://connotation-king.herokuapp.com/cartoon/"<<cartoon.id.to_s
+      jump_url = "#{HEROKU_URL}/cartoon/"<<cartoon.id.to_s
 
       [
         {
