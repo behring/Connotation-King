@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-# require 'wei-backend'
+require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
 require 'haml'
@@ -15,7 +15,7 @@ require_relative '../app/models/jzw'
 require_relative '../app/models/music'
 
 
-require_relative '../lib/wei-backend'
+# require_relative '../lib/wei-backend'
 require_relative '../lib/data_grab'
 require_relative '../lib/db_helper'
 require_relative '../lib/baidu_music'
