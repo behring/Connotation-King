@@ -92,7 +92,7 @@ on_text do
       # "#{user_name}"
       "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个"
     else
-      "回复“?”你就知道啦"
+      "回复“?”你就知道啦！"
   end
 
 end
