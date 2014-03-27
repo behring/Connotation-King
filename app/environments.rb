@@ -16,13 +16,13 @@ require_relative '../app/models/joke'
 require_relative '../app/models/jzw'
 require_relative '../app/models/music'
 
-require_relative '../lib/cartoon_grab'
-require_relative '../lib/joke_grab'
-require_relative '../lib/jzw_grab'
+require_relative '../lib/data-grab/cartoon_grab'
+require_relative '../lib/data-grab/joke_grab'
+require_relative '../lib/data-grab/jzw_grab'
 require_relative '../lib/data_grab'
 
-require_relative '../lib/db_add'
-require_relative '../lib/db_query'
+require_relative '../lib/db-helper/db_add'
+require_relative '../lib/db-helper/db_query'
 require_relative '../lib/db_helper'
 
 
