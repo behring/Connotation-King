@@ -1,20 +1,23 @@
-token "zhaolin"
+#token "zhaolin"
 
 
 on_text do
+
   user_input_content = params[:Content].strip
   content_type = ContentAnalysis.analysis_content_type(user_input_content)
 
   case content_type
-    
+
     when USER_CONTENT_TYPE_WHY
-      "您好,我是内含王,请回复数字选择您感兴趣的节目:\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4 在线听歌\n(如果“内含王”没有回复您，那她一定是睡着了或太忙了，请再多发几遍吧!)"
+      "您好,我是内含王,请回复数字选择您感兴趣的节目:"\
+      "\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4 在线听歌\n"\
+      "(如果“内含王”没有回复您，那她一定是睡着了或太忙了，请再多发几遍吧!)"
     when USER_CONTENT_TYPE_CARTOON
-      cartoon_url = DBHelper.get_random_cartoon_url
+      cartoon_url = DBHelper::DBQuery.get_random_cartoon_url
       if cartoon_url == nil
         cartoon_url = CARTOON_DEFAULT_URL
       end
-      cartoon = GrabData.grab_cartoon(cartoon_url)
+      cartoon = DataGrab::CartoonGrab.grab_cartoon(cartoon_url)
       
       #需要从数据库查询出来才会有id
       cartoon = Cartoon.find_by url:cartoon.url
@@ -37,21 +40,21 @@ on_text do
       ]
 
     when USER_CONTENT_TYPE_JOKE
-        joke_url = DBHelper.get_random_joke_url
+        joke_url = DBHelper::DBQuery.get_random_joke_url
         if joke_url == nil
           joke_url = JOKE_DEFAULT_URL
         end
 
-        joke = GrabData.grab_joke(joke_url)
+        joke = DataGrab::JokeGrab.grab_joke(joke_url)
         joke.content
 
     when USER_CONTENT_TYPE_JZW
-        jzw = GrabData.grab_jzw
+        jzw = DataGrab::JzwGrab.grab_jzw
         "#{jzw.qustion}\n(急转弯编号:#{jzw.page_row_number})"
 
     when USER_CONTENT_TYPE_JZW_ANSWER
         
-        answer = DBHelper.get_jzw_answer(user_input_content)
+        answer = DBHelper::DBQuery.get_jzw_answer(user_input_content)
         if answer !=nil
           "#{answer}\n(急转弯编号:#{user_input_content})"    
         else
@@ -88,9 +91,8 @@ on_text do
         #  }         
 
     when USER_CONTENT_TYPE_CX
-      # user_name = params[:FromUserName]
-      # "#{user_name}"
-      "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个"
+     "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个"\
+     "\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个"
     else
       "回复“?”你就知道啦"
   end
@@ -99,7 +101,8 @@ end
 
 
 on_subscribe do
-    "感谢您订阅“内含王”\n请回复数字选择您感兴趣的节目：\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4.在线听歌"
+    "感谢您订阅“内含王”\n请回复数字选择您感兴趣的节目："\
+    "\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4.在线听歌"
 end
 
 on_unsubscribe do

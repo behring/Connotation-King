@@ -33,11 +33,10 @@ get '/test' do
 
  jump_url = "#{HEROKU_URL}/cartoon/"
 "#{jump_url}"
-	# song = "冰雨"
-	# singer = "刘德华"
-	# music = BaiduMusic.get_music(singer,song)
-	# "#{music.url}\n\n\n\n\n#{music.durl}"
-
+  # song = "冰雨"
+  # singer = "刘德华"
+  # music = BaiduMusic.get_music(singer,song)
+  # "#{music.url}\n\n\n\n\n#{music.durl}"
 
 end
 

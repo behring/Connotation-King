@@ -1,12 +1,13 @@
-class BaiduMusic
+module BaiduMusic
 	def self.get_music(singer,song)
-		# music = DBHelper.get_music(singer,song)
-		# if music != nil
-		# 	music
-		# else
-			#go to baidu interface get a music
+		music = DBHelper::DBQuery.get_music(singer,song)
+		if music != nil
+			music
+		else
+			go to baidu interface get a music
 			music = request_baidu_inteface(singer,song)
-		# end
+      music
+		end
 	end
 
 
@@ -57,18 +58,14 @@ class BaiduMusic
 			# type = page.xpath("/result/p2p/type").text
 			music.singer = singer
 			music.song = song
-	
 
-			DBHelper.add_music(music)
+
+      DBHelper::DBAdd.add_music(music)
 			music
 		else
 			p "-------------------------------no music----------------------------------"
 			
 			nil
 		end
-		
-
-
-		
 	end
 end

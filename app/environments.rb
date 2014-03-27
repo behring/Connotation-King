@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'wei-backend'
+#require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
 require 'haml'
@@ -9,15 +9,23 @@ require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 require 'httparty'
 
+require_relative '../lib/wei-backend'
+
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
 require_relative '../app/models/jzw'
 require_relative '../app/models/music'
 
-
-# require_relative '../lib/wei-backend'
+require_relative '../lib/cartoon_grab'
+require_relative '../lib/joke_grab'
+require_relative '../lib/jzw_grab'
 require_relative '../lib/data_grab'
+
+require_relative '../lib/db_add'
+require_relative '../lib/db_query'
 require_relative '../lib/db_helper'
+
+
 require_relative '../lib/baidu_music'
 require_relative '../lib/user_content_analysis'
 

@@ -70,11 +70,6 @@ GEM
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
     tzinfo (0.3.39)
-    wei-backend (0.1.2)
-      haml (~> 4.0.4)
-      json (~> 1.8)
-      nokogiri (~> 1.6.0)
-      sinatra (~> 1.4.4)
 
 PLATFORMS
   ruby
@@ -93,4 +88,3 @@ DEPENDENCIES
   sinatra-redirect-with-flash
   sqlite3
   tux
-  wei-backend

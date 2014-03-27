@@ -11,7 +11,7 @@ EOF
 
 
 
-curl -H 'Content-type:text/xml' -d@- localhost:4567/weixin << EOF
+curl -H 'Content-type:text/xml' -d@- localhost:9292/weixin << EOF
 <xml>
  <ToUserName><![CDATA[toUser]]></ToUserName>
  <FromUserName><![CDATA[fromUser]]></FromUserName> 

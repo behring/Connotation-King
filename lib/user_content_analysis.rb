@@ -1,4 +1,4 @@
-class ContentAnalysis
+module ContentAnalysis
 	def self.analysis_content_type(content)
 		
 		case content
@@ -39,11 +39,6 @@ class ContentAnalysis
 					end
 
 				end
-
-
-				
-				
-
 		end
 	end
 end
