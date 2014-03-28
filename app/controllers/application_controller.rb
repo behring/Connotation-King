@@ -71,7 +71,7 @@ on_text do
         song = singer_song_array[1]
         music = BaiduMusic.get_music(singer,song)
         #waiting interface
-        if music !=nil
+        if music!= nil
           {
             :title => music.song,
             :description => music.singer,
@@ -91,8 +91,10 @@ on_text do
         #  }         
 
     when USER_CONTENT_TYPE_CX
-     "笑话数量：#{DBHelper.count_joke}个\n漫画数量：#{DBHelper.count_cartoon}个"\
-     "\n急转弯数量：#{DBHelper.count_jzw}个\n音乐数量：#{DBHelper.count_music}个"
+     "笑话数量：#{DBHelper::DBQuery.count_joke}个\n漫画数量："\
+     "#{DBHelper::DBQuery.count_cartoon}个"\
+     "\n急转弯数量：#{DBHelper::DBQuery.count_jzw}个"\
+     "\n音乐数量：#{DBHelper::DBQuery.count_music}个"
     else
       "回复“?”你就知道啦"
   end

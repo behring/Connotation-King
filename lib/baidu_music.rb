@@ -4,7 +4,7 @@ module BaiduMusic
 		if music != nil
 			music
 		else
-			go to baidu interface get a music
+			# go to baidu interface get a music
 			music = request_baidu_inteface(singer,song)
       music
 		end
