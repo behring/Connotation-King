@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/cartoon_grab.rb" afterPath="$PROJECT_DIR$/lib/data-grab/cartoon_grab.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_add.rb" afterPath="$PROJECT_DIR$/lib/db-helper/db_add.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_query.rb" afterPath="$PROJECT_DIR$/lib/db-helper/db_query.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/joke_grab.rb" afterPath="$PROJECT_DIR$/lib/data-grab/joke_grab.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jzw_grab.rb" afterPath="$PROJECT_DIR$/lib/data-grab/jzw_grab.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/environments.rb" afterPath="$PROJECT_DIR$/app/environments.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/wei-backend/wei-templates/image_text.haml" afterPath="$PROJECT_DIR$/lib/wei-backend/wei-templates/image_text.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="connotation-king.iws" />
@@ -34,37 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="data_grab.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/data_grab.rb">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="6" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200">
+            <state line="31" column="13" selection-start="862" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2300">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/wei-backend/main.rb">
+      <file leaf-file-name="image_text.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/wei-backend/wei-templates/image_text.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="105" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="520">
+            <state line="12" column="33" selection-start="389" selection-end="389" vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environments.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/environments.rb">
+      <file leaf-file-name="music.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/wei-backend/wei-templates/music.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="25" selection-start="704" selection-end="704" vertical-scroll-proportion="0.73239434" vertical-offset="240" max-vertical-offset="1300">
+            <state line="10" column="11" selection-start="303" selection-end="311" vertical-scroll-proportion="0.29498526" vertical-offset="0" max-vertical-offset="678">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/wei-backend/utils.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="3" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="37" column="13" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="940">
               <folding />
             </state>
           </provider>
@@ -100,7 +96,7 @@
       <file leaf-file-name="cartoon_grab.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/data-grab/cartoon_grab.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="25" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+            <state line="1" column="10" selection-start="25" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="560">
               <folding />
             </state>
           </provider>
@@ -109,7 +105,7 @@
       <file leaf-file-name="baidu_music.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="29" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1520">
+            <state line="2" column="29" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="1520">
               <folding />
             </state>
           </provider>
@@ -118,7 +114,7 @@
       <file leaf-file-name="config.ru" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ru">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="160">
+            <state line="2" column="24" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="160">
               <folding />
             </state>
           </provider>
@@ -158,8 +154,9 @@
         <option value="$PROJECT_DIR$/lib/jzw_grab.rb" />
         <option value="$PROJECT_DIR$/lib/baidu_music.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/environments.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/lib/wei-backend/wei-templates/image_text.haml" />
       </list>
     </option>
   </component>
@@ -193,6 +190,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,7 +219,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wei-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wei-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wei-templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,10 +288,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,7 +311,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,14 +470,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46296296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46437994" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26655897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27059773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25396827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21082391" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -438,11 +485,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -480,6 +527,76 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/data_grab.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="6" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/wei-backend/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="105" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/environments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="35" selection-start="0" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/wei-backend/utils.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/wei-backend/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/wei-backend/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data-grab/jzw_grab.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="21" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="860">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data-grab/cartoon_grab.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="10" selection-start="25" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="1520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="10" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="705">
@@ -489,9 +606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="5" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="74" column="5" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/environments.rb">
@@ -510,86 +625,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="15" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="44" column="15" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300">
-          <folding />
-        </state>
+        <state line="6" column="59" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300">
-          <folding />
-        </state>
+        <state line="6" column="59" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cartoon.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.067567565" vertical-offset="0" max-vertical-offset="592">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.067567565" vertical-offset="0" max-vertical-offset="592" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/footer.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.29752067" vertical-offset="0" max-vertical-offset="605">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.29752067" vertical-offset="0" max-vertical-offset="605" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="38" column="18" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/utils.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.2445055" vertical-offset="1502" max-vertical-offset="5040">
-          <folding />
-        </state>
+        <state line="84" column="0" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.2445055" vertical-offset="1502" max-vertical-offset="5040" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cartoon.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200">
-          <folding />
-        </state>
+        <state line="1" column="29" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140323134556_create_musics.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.0841122" vertical-offset="892" max-vertical-offset="1320">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.0841122" vertical-offset="892" max-vertical-offset="1320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="218" selection-end="218" vertical-scroll-proportion="0.31746033" vertical-offset="0" max-vertical-offset="441">
-          <folding />
-        </state>
+        <state line="7" column="7" selection-start="218" selection-end="218" vertical-scroll-proportion="0.31746033" vertical-offset="0" max-vertical-offset="441" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/user_content_analysis.rb">
@@ -601,30 +692,22 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p451@connotation-king/gems/sinatra-1.4.4/lib/sinatra/base.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1592" column="0" selection-start="52166" selection-end="52166" vertical-scroll-proportion="0.33333334" vertical-offset="31696" max-vertical-offset="40800">
-          <folding />
-        </state>
+        <state line="1592" column="0" selection-start="52166" selection-end="52166" vertical-scroll-proportion="0.33333334" vertical-offset="31696" max-vertical-offset="40800" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="6" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.0" vertical-offset="2352" max-vertical-offset="3100">
-          <folding />
-        </state>
+        <state line="125" column="6" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.0" vertical-offset="2352" max-vertical-offset="3100" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/db_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="352" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="700">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="352" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="700" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/db-helper/db_query.rb">
@@ -634,18 +717,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="9" selection-start="725" selection-end="725" vertical-scroll-proportion="1.1587983" vertical-offset="0" max-vertical-offset="2300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/db-helper/db_add.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="520">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="520" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/data-grab/joke_grab.rb">
@@ -683,25 +757,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="130" selection-end="130" vertical-scroll-proportion="0.22253521" vertical-offset="61" max-vertical-offset="940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="5" selection-start="1708" selection-end="1708" vertical-scroll-proportion="4.169014" vertical-offset="0" max-vertical-offset="1920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/wei-backend/wei-templates/music.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="303" selection-end="311" vertical-scroll-proportion="0.61349696" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
+        <state line="74" column="5" selection-start="1708" selection-end="1708" vertical-scroll-proportion="4.169014" vertical-offset="0" max-vertical-offset="1920" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/data_grab.rb">
@@ -734,9 +792,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/wei-backend.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="87" selection-end="87" vertical-scroll-proportion="0.112676054" vertical-offset="0" max-vertical-offset="355">
-          <folding />
-        </state>
+        <state line="2" column="11" selection-start="87" selection-end="87" vertical-scroll-proportion="0.112676054" vertical-offset="0" max-vertical-offset="355" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/wei-backend/utils.rb">
@@ -746,9 +802,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="13" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="704" selection-end="704" vertical-scroll-proportion="0.73239434" vertical-offset="240" max-vertical-offset="1300">
+        <state line="55" column="27" selection-start="1360" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="593" max-vertical-offset="1300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="13" selection-start="862" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/wei-backend/wei-templates/image_text.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="33" selection-start="389" selection-end="389" vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/wei-backend/wei-templates/music.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="303" selection-end="311" vertical-scroll-proportion="0.29498526" vertical-offset="0" max-vertical-offset="678">
           <folding />
         </state>
       </provider>

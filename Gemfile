@@ -30,7 +30,7 @@ group :development do
 	#可以在terminal中给数据库添加数据，测试使用
  	gem 'tux'
 
-	# gem 'pg'
+	#gem 'pg'
 
 end
 
