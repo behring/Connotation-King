@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 gem 'sinatra'
 #微信公众平台
-#gem 'wei-backend'
+gem 'wei-backend'
 gem 'haml'
 gem 'json'
 #grab internet data

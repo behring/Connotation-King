@@ -4,8 +4,8 @@ class CreateCartoons < ActiveRecord::Migration
      t.string :title
      t.text :description
      t.string :picture_url
-     t.string :url
-     t.string :other_urls
+     t.string :path
+     t.string :category
      t.timestamps
    end
  end

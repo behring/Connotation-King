@@ -2,9 +2,10 @@ class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
       t.string :identity_user
-      t.string :identity_cartoon
-      t.string :identity_joke
-      t.string :identity_jzw
+      t.string :nickname
+      t.string :input_content
+      t.string :data_type
+      t.string :data_id
       t.timestamps
     end
   end

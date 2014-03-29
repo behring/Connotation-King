@@ -12,29 +12,29 @@
 
 ActiveRecord::Schema.define(version: 20140327133350) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cartoons", force: true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "picture_url"
-    t.string   "url"
-    t.string   "other_urls"
+    t.string   "path"
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "jokes", force: true do |t|
-    t.string   "title"
     t.text     "content"
-    t.string   "url"
-    t.string   "other_urls"
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "jzws", force: true do |t|
-    t.string   "page_row_number"
-    t.string   "qustion"
-    t.text     "answer"
+    t.string   "question"
+    t.string   "answer"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,9 +50,10 @@ ActiveRecord::Schema.define(version: 20140327133350) do
 
   create_table "users", force: true do |t|
     t.string   "identity_user"
-    t.string   "identity_cartoon"
-    t.string   "identity_joke"
-    t.string   "identity_jzw"
+    t.string   "nickname"
+    t.string   "input_content"
+    t.string   "data_type"
+    t.string   "data_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,15 +1,13 @@
 require 'rubygems'
 require 'sinatra'
-#require 'wei-backend'
+require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
 require 'haml'
-# require 'timers'
+
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 require 'httparty'
-
-require_relative '../lib/wei-backend'
 
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
@@ -35,15 +33,22 @@ require_relative '../app/controllers/application_controller'
 require_relative './constant'
 
 
-
-
-
+# require 'timers'
 # require_relative '../lib/timer'
 
 
 configure :development do
- set :database, 'sqlite:///dev.db'
- set :show_exceptions, true
+
+  db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///neihanwang_db')
+
+  ActiveRecord::Base.establish_connection(
+      :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+      :host     => db.host,
+      :username => db.user,
+      :password => db.password,
+      :database => db.path[1..-1],
+      :encoding => 'utf8'
+  )
 end
 
 configure :production do
