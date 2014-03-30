@@ -1,4 +1,3 @@
-token "connotation_king"
 token "zhaolin"
 
 
