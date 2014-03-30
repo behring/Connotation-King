@@ -51,6 +51,7 @@ on_text do
           "很抱歉，没有找到您要的答案哦T_T"
         end
 
+      
     when USER_CONTENT_TYPE_MUSIC
         # "节目开发中，尽请期待！感谢您关注#内含王#"
         "请输入歌手名+歌曲名(例如:张杰+他不懂)"
