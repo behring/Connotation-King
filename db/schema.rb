@@ -52,8 +52,8 @@ ActiveRecord::Schema.define(version: 20140327133350) do
     t.string   "identity_user"
     t.string   "nickname"
     t.string   "input_content"
-    t.string   "data_type"
-    t.string   "data_id"
+    t.integer   "data_type"
+    t.integer   "data_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

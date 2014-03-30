@@ -1,3 +1,3 @@
 class Jzw < ActiveRecord::Base
-	validates_uniqueness_of :qustion
+	validates_uniqueness_of :question
 end

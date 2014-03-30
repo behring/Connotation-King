@@ -4,8 +4,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :identity_user
       t.string :nickname
       t.string :input_content
-      t.string :data_type
-      t.string :data_id
+      t.integer :data_type
+      t.integer :data_id
       t.timestamps
     end
   end

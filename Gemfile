@@ -6,7 +6,6 @@ gem 'sinatra'
 #微信公众平台
 gem 'wei-backend'
 gem 'haml'
-gem 'json'
 #grab internet data
 gem 'nokogiri'
 
@@ -21,16 +20,15 @@ gem 'sinatra-redirect-with-flash'
 #http://rubydoc.info/gems/timers/2.0.0/frames
 # gem "timers", "~> 2.0.0"
 
-gem "httparty"
 
 group :development do
-	gem 'shotgun'
-	gem 'sqlite3'
-	#provides a Shell for Sinatra so we can interact with our application
-	#可以在terminal中给数据库添加数据，测试使用
- 	gem 'tux'
+	#gem 'shotgun'
+	#gem 'sqlite3'
+	##provides a Shell for Sinatra so we can interact with our application
+	##可以在terminal中给数据库添加数据，测试使用
+ 	#gem 'tux'
 
-	#gem 'pg'
+	gem 'pg'
 
 end
 
