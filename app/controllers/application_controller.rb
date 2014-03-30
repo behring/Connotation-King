@@ -7,7 +7,7 @@ on_text do
   content_type = ContentAnalysis.analysis_content_type(user_input_content)
 
   case content_type
-    
+
     when USER_CONTENT_TYPE_WHY
       "您好,我是内含王,请回复数字选择您感兴趣的节目:"\
       "\n1 内涵漫画\n2 幽默笑话\n3 脑筋急转弯\n4 在线听歌\n"\
@@ -50,7 +50,6 @@ on_text do
         else
           "很抱歉，没有找到您要的答案哦T_T"
         end
-
 
     when USER_CONTENT_TYPE_MUSIC
         # "节目开发中，尽请期待！感谢您关注#内含王#"
