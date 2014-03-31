@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/baidu_music.rb" afterPath="$PROJECT_DIR$/lib/baidu_music.rb" />
-    </list>
+    <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="" />
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,7 +47,7 @@
       <file leaf-file-name="baidu_music.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="56" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1340">
+            <state line="24" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.60784316" vertical-offset="232" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -769,7 +767,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="56" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1340">
+        <state line="24" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.60784316" vertical-offset="232" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
