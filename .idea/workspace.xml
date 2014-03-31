@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/baidu_music.rb" afterPath="$PROJECT_DIR$/lib/baidu_music.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="connotation-king.iws" />
@@ -50,7 +49,7 @@
       <file leaf-file-name="baidu_music.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="53" selection-start="597" selection-end="597" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1320">
+            <state line="20" column="24" selection-start="555" selection-end="568" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -423,10 +422,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42328042" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42328042" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -770,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="53" selection-start="597" selection-end="597" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1320">
+        <state line="20" column="24" selection-start="555" selection-end="568" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
