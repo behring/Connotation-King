@@ -18,7 +18,7 @@ on_text do
       cartoon = DBQuery.get_random_cartoon(form_user_name,user_input_content)
 
       jump_url = "#{HEROKU_URL}/cartoon/"<<cartoon.id.to_s
-      p "----1-------#{jump_url}-------#{artoon.title}-----#{cartoon.picture_url}-------"
+      p "----1-------#{jump_url}-------#{cartoon.title}-----#{cartoon.picture_url}-------"
       [
         {
          :title => cartoon.title,
