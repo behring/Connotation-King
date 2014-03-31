@@ -26,10 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="baidu_music.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.050632913" vertical-offset="0" max-vertical-offset="2100">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baidu_music.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="-0.47058824" vertical-offset="672" max-vertical-offset="1340">
+            <state line="24" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="23" selection-start="175" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
               <folding />
             </state>
           </provider>
@@ -384,10 +402,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42328042" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42328042" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -715,23 +733,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
+        <state line="24" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="175" selection-end="175" vertical-scroll-proportion="0.44117647" vertical-offset="0" max-vertical-offset="880">
+        <state line="9" column="23" selection-start="175" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="-0.47058824" vertical-offset="672" max-vertical-offset="1340">
+        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.050632913" vertical-offset="0" max-vertical-offset="2100">
           <folding />
         </state>
       </provider>
