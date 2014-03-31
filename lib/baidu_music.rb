@@ -14,16 +14,24 @@ module BaiduMusic
 	private
 	def self.request_baidu_inteface(singer,song)
 
-		#url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
-
-    url = "http://api.map.baidu.com/geocoder?location=40.8248319,111.6604351&coord_type=gcj02&output=xml"
+		url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
+    #url = "http://api.map.baidu.com/geocoder?location=40.8248319,111.6604351&coord_type=gcj02&output=xml"
 		p "--------------------------------1-----#{url}--------------------------------"
 
 		# response = HTTParty.get(URI.encode(url))
 		# page = Nokogiri::XML(response.body)
-		page = Nokogiri::XML(open(URI.encode(url)),nil,'utf-8')
+		#page = Nokogiri::XML(open(URI.encode(url)),nil,'utf-8')
 		#count = page.xpath("/result/count").text.to_i
-    p "----------------------------document--------|#{page.to_s}|--------------------------------"
+
+    #url_new = URI.parse(URI.encode(url))
+    #req = Net::HTTP::Get.new(url_new.path)
+    #result = Net::HTTP.get(URI.parse(url))
+    #res = Net::HTTP.start(url_new.host, url_new.port) {|http|
+    #  http.request(req)
+    #}
+    xml_data = Net::HTTP.get_response(URI.parse(URI.encode(url))).body
+
+    p "----------------------------response body--------|#{xml_data.force_encoding('utf-8')}------------------------------"
 		#p "----------------------------3---------|#{count}|--------------------------------"
 		#if count>0
 		#	p "-------------------------------has music----------------------------------"

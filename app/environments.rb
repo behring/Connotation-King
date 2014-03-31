@@ -4,7 +4,7 @@ require 'wei-backend'
 require 'nokogiri'
 require 'open-uri'
 require 'haml'
-
+require 'net/http'
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 
