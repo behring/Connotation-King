@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/index_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="connotation-king.iws" />
@@ -15,7 +16,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/connotation-king@rackup.coverage" NAME="rackup Coverage Results" MODIFIED="1396117363957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="connotation-king" />
+    <SUITE FILE_PATH="coverage/connotation-king@rackup.coverage" NAME="rackup Coverage Results" MODIFIED="1396228469846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="connotation-king" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -29,19 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="403" selection-end="403" vertical-scroll-proportion="0.46376812" vertical-offset="140" max-vertical-offset="2120">
+            <state line="20" column="14" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="2120">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="db_query.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/db_query.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="11" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="2400">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="41" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+            <state line="51" column="11" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.73085845" vertical-offset="705" max-vertical-offset="1300">
               <folding />
             </state>
           </provider>
@@ -74,7 +84,6 @@
         <option value="$PROJECT_DIR$/lib/wei-backend.rb" />
         <option value="$PROJECT_DIR$/lib/wei-backend/base.rb" />
         <option value="$PROJECT_DIR$/lib/wechat.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/index_controller.rb" />
         <option value="$PROJECT_DIR$/lib/data_grab.rb" />
         <option value="$PROJECT_DIR$/lib/db_helper.rb" />
         <option value="$PROJECT_DIR$/app/test.txt" />
@@ -103,6 +112,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/index_controller.rb" />
       </list>
     </option>
   </component>
@@ -391,14 +401,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49076518" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3944591" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1914378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19466881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25396827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21082391" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -406,11 +416,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32717678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32717678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -448,11 +458,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="440">
+        <state line="26" column="0" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="1340">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="440" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
@@ -478,9 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/data_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="200">
-          <folding />
-        </state>
+        <state line="1" column="12" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/db_query.rb">
@@ -492,30 +505,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="14" column="36" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/db_add.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="240">
-          <folding />
-        </state>
+        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="6" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="140">
-          <folding />
-        </state>
+        <state line="0" column="10" selection-start="6" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="140" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="440">
-          <folding />
-        </state>
+        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="440" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
@@ -674,60 +679,29 @@
         <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/db_query.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="10" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.0" vertical-offset="1855" max-vertical-offset="2400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/data_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200">
-          <folding />
-        </state>
+        <state line="1" column="12" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1120" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="553" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="42" column="18" selection-start="1120" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="553" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.1980198" vertical-offset="0" max-vertical-offset="707">
-          <folding />
-        </state>
+        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.1980198" vertical-offset="0" max-vertical-offset="707" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="6" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="140">
-          <folding />
-        </state>
+        <state line="0" column="10" selection-start="6" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="140" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/db_add.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.02739726" vertical-offset="0" max-vertical-offset="730">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="352" selection-end="672" vertical-scroll-proportion="0.36262202" vertical-offset="0" max-vertical-offset="717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="41" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.02739726" vertical-offset="0" max-vertical-offset="730" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
@@ -737,9 +711,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="352" selection-end="672" vertical-scroll-proportion="0.6220096" vertical-offset="0" max-vertical-offset="700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/db_query.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="11" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="34" selection-start="403" selection-end="403" vertical-scroll-proportion="0.46376812" vertical-offset="140" max-vertical-offset="2120">
+        <state line="20" column="14" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="2120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="11" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.73085845" vertical-offset="705" max-vertical-offset="1300">
           <folding />
         </state>
       </provider>

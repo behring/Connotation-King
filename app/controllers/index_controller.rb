@@ -49,6 +49,8 @@ end
 get '/cartoon/:id' do
   cartoon_id = params[:id].to_i
   cartoon = Cartoon.find(cartoon_id)
+  p "-----2------#{cartoon_id}------#{cartoon.title}-----#{cartoon.picture_url}-----"
+
   haml :cartoon,:locals => { :title =>cartoon.title, :picture_url =>cartoon.picture_url}
 
 
