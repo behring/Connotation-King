@@ -16,22 +16,13 @@ module BaiduMusic
 
 		url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
 		p "--------------------------------1-----#{url}--------------------------------"
-		
 		# response = HTTParty.get(URI.encode(url))
-		
 		# page = Nokogiri::XML(response.body)
 		page = Nokogiri::XML(open(URI.encode(url)),nil,'UTF-8')
-		# .encode("UTF-8")
-		# node_encode = page.xpath("/result/url/encode").text
-		p "============================================="
-
-		system "ls -l /usr/lib/libxml*"
-
-		p "=============================================="
-
 		count = page.xpath("/result/count").text.to_i
 		p "----------------------------3---------#{count}--------------------------------"
     p "--------------------4-----------------#{count>0}--------------------------------"
+    
 		if count>0
 			p "-------------------------------has music----------------------------------"
 			music = Music.new
@@ -64,7 +55,7 @@ module BaiduMusic
 			music
 		else
 			p "-------------------------------no music----------------------------------"
-			
+
 			nil
 		end
 	end
