@@ -18,7 +18,8 @@ module BaiduMusic
 		p "--------------------------------1-----#{url}--------------------------------"
 		# response = HTTParty.get(URI.encode(url))
 		# page = Nokogiri::XML(response.body)
-		page = Nokogiri::XML(open(URI.encode(url)),nil,'unicode')
+
+		page = Nokogiri::XML(open(URI.encode(url)),nil,'UTF-8')
 		count = page.xpath("/result/count").text.to_i
     p "----------------------------document--------|#{page.to_s}|--------------------------------"
 		p "----------------------------3---------|#{count}|--------------------------------"
