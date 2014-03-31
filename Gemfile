@@ -6,9 +6,8 @@ gem 'sinatra'
 #微信公众平台
 gem 'wei-backend'
 gem 'haml'
-#grab internet data
-gem 'nokogiri'
-
+#html and xml解析库，依赖libxml2.性能好
+gem 'nokogiri','1.5.11'
 #orm (对象关系映射库)
 gem 'activerecord'
 #ports ActiveRecord for Sinatra

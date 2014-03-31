@@ -8,6 +8,6 @@ module DBAdd
   def self.add_music(music)
     Music.create(singer: music.singer, song: music.song,url: music.url,durl: music.durl)
   end
-  
+
 end
 
