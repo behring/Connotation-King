@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/baidu_music.rb" afterPath="$PROJECT_DIR$/lib/baidu_music.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/connotation-king@rackup.coverage" NAME="rackup Coverage Results" MODIFIED="1396268581444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="connotation-king" />
+    <SUITE FILE_PATH="coverage/connotation-king@rackup.coverage" NAME="rackup Coverage Results" MODIFIED="1396269040653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="connotation-king" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -50,7 +49,7 @@
       <file leaf-file-name="baidu_music.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="65" selection-start="705" selection-end="705" vertical-scroll-proportion="0.50980395" vertical-offset="232" max-vertical-offset="1340">
+            <state line="20" column="56" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1340">
               <folding />
             </state>
           </provider>
@@ -770,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="65" selection-start="705" selection-end="705" vertical-scroll-proportion="0.50980395" vertical-offset="232" max-vertical-offset="1340">
+        <state line="20" column="56" selection-start="600" selection-end="600" vertical-scroll-proportion="0.4117647" vertical-offset="232" max-vertical-offset="1340">
           <folding />
         </state>
       </provider>
