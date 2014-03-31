@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/constant.rb" afterPath="$PROJECT_DIR$/app/constant.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/index_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/baidu_music.rb" afterPath="$PROJECT_DIR$/lib/baidu_music.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/db_add.rb" afterPath="$PROJECT_DIR$/lib/db_add.rb" />
     </list>
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +16,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/connotation-king@rackup.coverage" NAME="rackup Coverage Results" MODIFIED="1396228469846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="connotation-king" />
+    <SUITE FILE_PATH="coverage/connotation-king@rackup.coverage" NAME="rackup Coverage Results" MODIFIED="1396253287910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="connotation-king" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -34,7 +33,34 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2100">
+            <state line="59" column="33" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0" vertical-offset="843" max-vertical-offset="2100">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baidu_music.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="17" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="1520">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_add.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/db_add.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="2" selection-start="364" selection-end="364" vertical-scroll-proportion="0.4651163" vertical-offset="0" max-vertical-offset="430">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="20" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="700">
               <folding />
             </state>
           </provider>
@@ -49,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.5104408" vertical-offset="800" max-vertical-offset="1280">
+            <state line="50" column="0" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1280">
               <folding />
             </state>
           </provider>
@@ -91,7 +117,6 @@
         <option value="$PROJECT_DIR$/lib/cartoon_grab.rb" />
         <option value="$PROJECT_DIR$/lib/joke_grab.rb" />
         <option value="$PROJECT_DIR$/lib/jzw_grab.rb" />
-        <option value="$PROJECT_DIR$/lib/baidu_music.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/lib/wei-backend/wei-templates/image_text.haml" />
         <option value="$PROJECT_DIR$/app/models/joke.rb" />
@@ -104,7 +129,6 @@
         <option value="$PROJECT_DIR$/lib/db-helper/db_query.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/lib/db_add.rb" />
         <option value="$PROJECT_DIR$/lib/db_query.rb" />
         <option value="$PROJECT_DIR$/app/environments.rb" />
         <option value="$PROJECT_DIR$/lib/data_type.rb" />
@@ -112,8 +136,10 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/views/cartoon.haml" />
         <option value="$PROJECT_DIR$/app/constant.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/index_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/baidu_music.rb" />
+        <option value="$PROJECT_DIR$/lib/db_add.rb" />
       </list>
     </option>
   </component>
@@ -198,6 +224,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connotation-king" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -230,24 +270,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connotation-king" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connotation-king" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -258,7 +280,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adv-robot" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -423,7 +445,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3944591" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39417988" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -431,7 +453,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25396827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21082391" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34168866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34126985" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,7 +551,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/db_add.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="240" />
+        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="240">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
@@ -599,11 +623,6 @@
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="6" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.0" vertical-offset="2352" max-vertical-offset="3100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="564" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1520" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/footer.haml">
@@ -708,18 +727,6 @@
         <state line="0" column="10" selection-start="6" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="140" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/db_add.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="24" selection-end="37" vertical-scroll-proportion="0.02739726" vertical-offset="0" max-vertical-offset="730" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="352" selection-end="672" vertical-scroll-proportion="0.6220096" vertical-offset="0" max-vertical-offset="700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0" vertical-offset="269" max-vertical-offset="1340">
@@ -748,16 +755,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2100">
+        <state line="50" column="0" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1280">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
+    <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.5104408" vertical-offset="800" max-vertical-offset="1280">
+        <state line="17" column="20" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="33" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0" vertical-offset="843" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/baidu_music.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="17" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="1520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/db_add.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="364" selection-end="364" vertical-scroll-proportion="0.4651163" vertical-offset="0" max-vertical-offset="430">
           <folding />
         </state>
       </provider>

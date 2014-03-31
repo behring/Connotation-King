@@ -1,6 +1,6 @@
 module BaiduMusic
 	def self.get_music(singer,song)
-		music = DBHelper::DBQuery.get_music(singer,song)
+		music = DBQuery.get_music(singer,song)
 		if music != nil
 			music
 		else
@@ -60,7 +60,7 @@ module BaiduMusic
 			music.song = song
 
 
-      DBHelper::DBAdd.add_music(music)
+      DBAdd.add_music(music)
 			music
 		else
 			p "-------------------------------no music----------------------------------"
