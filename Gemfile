@@ -8,6 +8,8 @@ gem 'wei-backend'
 gem 'haml'
 #html and xml解析库，依赖libxml2.性能好
 gem 'nokogiri'
+#纯ruby编写的xml解析库，不依赖任何库，性能欠佳
+#gem 'hpricot'
 #orm (对象关系映射库)
 gem 'activerecord'
 #ports ActiveRecord for Sinatra

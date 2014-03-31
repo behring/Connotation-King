@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 require 'wei-backend'
+require 'nokogiri'
 require 'open-uri'
 require 'haml'
-require 'nokogiri'
+
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 
