@@ -7,7 +7,7 @@ gem 'sinatra'
 gem 'wei-backend'
 gem 'haml'
 #html and xml解析库，依赖libxml2.性能好
-gem 'nokogiri','1.5.11'
+gem 'nokogiri'
 #orm (对象关系映射库)
 gem 'activerecord'
 #ports ActiveRecord for Sinatra

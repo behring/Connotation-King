@@ -22,9 +22,12 @@ GEM
     haml (4.0.5)
       tilt
     i18n (0.6.9)
+    json (1.8.1)
+    mini_portile (0.5.3)
     minitest (4.7.5)
     multi_json (1.9.2)
-    nokogiri (1.5.11)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.2)
@@ -44,7 +47,10 @@ GEM
       atomic (>= 1.1.7, < 2)
     tilt (1.4.1)
     tzinfo (0.3.39)
-    wei-backend (0.0.3)
+    wei-backend (0.1.4)
+      haml (~> 4.0.4)
+      json (~> 1.8)
+      nokogiri (~> 1.6.0)
       sinatra (~> 1.4.4)
 
 PLATFORMS
@@ -53,7 +59,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   haml
-  nokogiri (= 1.5.11)
+  nokogiri
   pg
   sinatra
   sinatra-activerecord
