@@ -18,54 +18,47 @@ module BaiduMusic
     #url = "http://api.map.baidu.com/geocoder?location=40.8248319,111.6604351&coord_type=gcj02&output=xml"
 		p "--------------------------------1-----#{url}--------------------------------"
 
-		# response = HTTParty.get(URI.encode(url))
-		# page = Nokogiri::XML(response.body)
-		#page = Nokogiri::XML(open(URI.encode(url)),nil,'utf-8')
-		#count = page.xpath("/result/count").text.to_i
 
-    #url_new = URI.parse(URI.encode(url))
-    #req = Net::HTTP::Get.new(url_new.path)
-    #result = Net::HTTP.get(URI.parse(url))
-    #res = Net::HTTP.start(url_new.host, url_new.port) {|http|
-    #  http.request(req)
-    #}
-    xml_data = Net::HTTP.get_response(URI.parse(URI.encode(url))).body
+		page = Nokogiri::XML(open(URI.encode(url)),nil,'utf-8')
+		count = page.xpath("/result/count").text.to_i
+p "----------------------------page body--------|#{page.to_s}|------------------------------"
+  
+    # xml_data = Net::HTTP.get_response(URI.parse(URI.encode(url))).body
+    # p "----------------------------response body--------|#{xml_data.force_encoding('utf-8')}------------------------------"
 
-    p "----------------------------response body--------|#{xml_data.force_encoding('utf-8')}------------------------------"
-		#p "----------------------------3---------|#{count}|--------------------------------"
-		#if count>0
-		#	p "-------------------------------has music----------------------------------"
-		#	music = Music.new
-		#	reg_str = /http:\/\/([\w+\.]+)(\/(\w+\/)+)/
-    #
-		#	2.times do |index|
-		#		if index == 0
-		#			#普通音乐
-		#			node_encode = page.xpath("/result/url/encode").text
-		#			node_decode = page.xpath("/result/url/decode").text
-		#			encode_result = reg_str.match(node_encode)
-		#			decode_result = node_decode.split('&')[0]
-		#			music.url = "#{encode_result}#{decode_result}"
-		#		else
-		#			#高清音乐
-		#			node_encode = page.xpath("/result/durl/encode").text
-		#			node_decode = page.xpath("/result/durl/decode").text
-		#			encode_result = reg_str.match(node_encode)
-		#			decode_result = node_decode.split('&')[0]
-		#			music.durl = "#{encode_result}#{decode_result}"
-		#		end
-		#
-		#	end
-		#	# type = page.xpath("/result/p2p/type").text
-		#	music.singer = singer
-		#	music.song = song
-    #
-     # DBAdd.add_music(music)
-		#	music
-		#else
-		#	p "-------------------------------no music----------------------------------"
-    #
-		#	nil
-		#end
+		if count>0
+			p "-------------------------------has music----------------------------------"
+			music = Music.new
+			reg_str = /http:\/\/([\w+\.]+)(\/(\w+\/)+)/
+    
+			2.times do |index|
+				if index == 0
+					#普通音乐
+					node_encode = page.xpath("/result/url/encode").text
+					node_decode = page.xpath("/result/url/decode").text
+					encode_result = reg_str.match(node_encode)
+					decode_result = node_decode.split('&')[0]
+					music.url = "#{encode_result}#{decode_result}"
+				else
+					#高清音乐
+					node_encode = page.xpath("/result/durl/encode").text
+					node_decode = page.xpath("/result/durl/decode").text
+					encode_result = reg_str.match(node_encode)
+					decode_result = node_decode.split('&')[0]
+					music.durl = "#{encode_result}#{decode_result}"
+				end
+		
+			end
+			# type = page.xpath("/result/p2p/type").text
+			music.singer = singer
+			music.song = song
+    
+     DBAdd.add_music(music)
+			music
+		else
+			p "-------------------------------no music----------------------------------"
+    
+			nil
+		end
 	end
 end
