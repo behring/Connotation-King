@@ -51,8 +51,8 @@ on_text do
         end
 
     when USER_CONTENT_TYPE_MUSIC
-        # "节目开发中，尽请期待！感谢您关注#内含王#"
-        "请输入歌手名+歌曲名(例如:张杰+他不懂)"
+        "节目开发中，尽请期待！感谢您关注#内含王#"
+        # "请输入歌手名+歌曲名(例如:张杰+他不懂)"
     when USER_CONTENT_TYPE_MUSIC_SEARCH
         singer_song_array = user_input_content.split('+')
         singer = singer_song_array[0]
