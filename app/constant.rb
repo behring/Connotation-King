@@ -1,5 +1,4 @@
 #HEROKU_URL = "http://connotation-king.herokuapp.com"
-
 HEROKU_URL = "http://neihanwang521.herokuapp.com"
 
 #user input content type

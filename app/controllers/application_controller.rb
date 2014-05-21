@@ -1,4 +1,4 @@
-#token "zhaolin"
+token "zhaolin"
 
 
 on_text do
