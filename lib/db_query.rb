@@ -19,7 +19,9 @@ module DBQuery
 
   def self.get_random_joke(form_user_name,user_input_content)
     if Joke.count>0
-      joke = Joke.first(:order => "RANDOM()")
+      # joke = Joke.first(:order => "RANDOM()")
+      offset = rand(Joke.count)
+      joke = Joke.first(:offset => offset)
       is_exist = DBQuery.exist_users_database(form_user_name,
                                               DataType::JOKE,joke.id)
       if is_exist
