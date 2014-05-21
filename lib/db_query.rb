@@ -43,7 +43,9 @@ module DBQuery
 
   def self.get_random_cartoon(form_user_name,user_input_content)
     if Cartoon.count>0
-     cartoon =  Cartoon.first(:order => "RANDOM()")
+     # cartoon =  Cartoon.first(:order => "RANDOM()")
+     offset = rand(Cartoon.count)
+      cartoon = Cartoon.first(:offset => offset)
       is_exist = DBQuery.exist_users_database(form_user_name,
                                               DataType::CARTOON,cartoon.id)
       if is_exist
@@ -65,7 +67,9 @@ module DBQuery
 
   def self.get_random_jzw(form_user_name,user_input_content)
     if Jzw.count>0
-      jzw = Jzw.first(:order => "RANDOM()")
+      # jzw = Jzw.first(:order => "RANDOM()")
+      offset = rand(Jzw.count)
+      jzw = Jzw.first(:offset => offset)
       is_exist = DBQuery.exist_users_database(form_user_name,
                                               DataType::JZW,jzw.id)
       if is_exist
