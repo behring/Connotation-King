@@ -1,5 +1,7 @@
-HEROKU_URL = "http://neihanwang521.herokuapp.com"
-#HEROKU_URL = "http://connotation-king.herokuapp.com"
+SERVER_URL = "http://neihanwang521.herokuapp.com"
+#SERVER_URL = "http://connotation-king.herokuapp.com"
+
+BUCKET_IMAGES_CARTOON_COVER = 'images/cartoon/cover/'
 
 #user input content type
 CONSTANT_BASE = 1000
@@ -13,3 +15,4 @@ USER_CONTENT_TYPE_JZW_ANSWER = CONSTANT_BASE+USER_CONTENT_TYPE_JZW
 USER_CONTENT_TYPE_MUSIC_SEARCH = CONSTANT_BASE+USER_CONTENT_TYPE_MUSIC
 USER_CONTENT_TYPE_CX = "CX"
 
+BUCKET_NAME= 'neihanwang-bucket'

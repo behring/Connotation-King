@@ -7,6 +7,7 @@ require 'haml'
 require 'net/http'
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
+require 'aws-sdk'
 
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
@@ -29,6 +30,13 @@ require_relative './constant'
 # require 'timers'
 # require_relative '../lib/timer'
 
+puts 'config aws with access account'
+AWS.config(
+    :access_key_id => 'AKIAIDWEJ2SWVJBCJLLA',
+    :secret_access_key => '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'
+)
+puts 'config finished'
+
 
 configure :development do
 
@@ -45,7 +53,7 @@ configure :development do
 end
 
 configure :production do
- db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
+ db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/neihanwang_db')
 
  ActiveRecord::Base.establish_connection(
    :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,

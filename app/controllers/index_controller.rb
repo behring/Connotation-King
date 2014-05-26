@@ -31,7 +31,7 @@ get '/test' do
 	# count = page.xpath("/result/p2p/type").text
 	# "#{count.class}"
 
- jump_url = "#{HEROKU_URL}/cartoon/"
+ jump_url = "#{SERVER_URL}/cartoon/"
 "#{jump_url}"
   # song = "冰雨"
   # singer = "刘德华"
@@ -46,12 +46,47 @@ get '/index' do
 #haml :postgres_test
 end
 
+
+get '/bucket/*' do
+
+	request_path = params[:splat][0]
+	s3 = AWS::S3.new
+	puts "get an instance of the S3 interface."
+	puts "remove bucket #{BUCKET_NAME} if exist"
+	bucket = s3.buckets[BUCKET_NAME]
+
+	# bucket.objects.each do |obj|
+ #  		puts obj.key
+	# end
+
+	case request_path
+		when BUCKET_IMAGES_CARTOON_COVER
+			bucket.objects.with_prefix("#{request_path}").each_with_index(:limit => 5) do |cover,index|
+  			if index>0
+  				puts "#{cover.public_url}   #{index}"
+  			end
+		end
+	end
+
+	"DDD"
+end
+
+get '/cartoons/list' do
+ # matches "GET /posts?page=2&count=40&descend = false"
+  page = params[:page]
+  count = params[:count]
+  descend = params[:descend]
+
+
+  "page :#{page}   count:#{count}   descend :#{descend}"
+end
+
+
+#weixin
 get '/cartoon/:id' do
   cartoon_id = params[:id].to_i
   cartoon = Cartoon.find(cartoon_id)
-
   haml :cartoon,:locals => { :title =>cartoon.title, :picture_url =>cartoon.picture_url}
-
 
 end
 
