@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/environments.rb" afterPath="$PROJECT_DIR$/app/environments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/index_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="" />
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
