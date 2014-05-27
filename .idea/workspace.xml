@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/baidu_music.rb" afterPath="$PROJECT_DIR$/lib/baidu_music.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
     </list>
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,16 +31,16 @@
       <file leaf-file-name="index_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="12" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="843" max-vertical-offset="2320">
+            <state line="34" column="12" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="2320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="book.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/book.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="35" selection-start="67" selection-end="67" vertical-scroll-proportion="0.02739726" vertical-offset="0" max-vertical-offset="730">
+            <state line="1" column="35" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -55,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="35" selection-start="1883" selection-end="1892" vertical-scroll-proportion="0.0" vertical-offset="908" max-vertical-offset="2100">
+            <state line="55" column="30" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.40725243" vertical-offset="808" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
@@ -121,7 +121,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20140327133350_create_users.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/views/cartoon.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/baidu_music.rb" />
         <option value="$PROJECT_DIR$/app/models/cartoon.rb" />
@@ -130,6 +129,7 @@
         <option value="$PROJECT_DIR$/lib/db_add.rb" />
         <option value="$PROJECT_DIR$/app/environments.rb" />
         <option value="$PROJECT_DIR$/app/controllers/index_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -734,7 +734,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/constant.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="159" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480" />
+        <state line="4" column="19" selection-start="159" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140526071458_create_books.rb">
@@ -763,9 +765,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/book.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="35" selection-start="1883" selection-end="1892" vertical-scroll-proportion="0.0" vertical-offset="908" max-vertical-offset="2100">
+        <state line="1" column="35" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
@@ -777,9 +779,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/book.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="35" selection-start="67" selection-end="67" vertical-scroll-proportion="0.02739726" vertical-offset="0" max-vertical-offset="730">
+        <state line="55" column="30" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.40725243" vertical-offset="808" max-vertical-offset="2100">
           <folding />
         </state>
       </provider>
