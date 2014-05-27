@@ -14,6 +14,8 @@ require_relative '../app/models/joke'
 require_relative '../app/models/jzw'
 require_relative '../app/models/music'
 require_relative '../app/models/user'
+require_relative '../app/models/book'
+
 
 require_relative '../lib/data_type'
 require_relative '../lib/db_add'
@@ -32,8 +34,8 @@ require_relative './constant'
 
 puts 'config aws with access account'
 AWS.config(
-    :access_key_id => 'AKIAIDWEJ2SWVJBCJLLA',
-    :secret_access_key => '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'
+    :access_key_id => 'xxxxxx',
+    :secret_access_key => 'xxxxxxxxx'
 )
 puts 'config finished'
 

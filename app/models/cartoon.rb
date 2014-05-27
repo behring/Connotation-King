@@ -1,4 +1,3 @@
 class Cartoon < ActiveRecord::Base
-	validates_uniqueness_of :title
-
+  validates_uniqueness_of :title
 end

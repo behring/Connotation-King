@@ -9,5 +9,8 @@ module DBAdd
     Music.create(singer: music.singer, song: music.song,url: music.url,durl: music.durl)
   end
 
+  def self.add_book(book)
+    Book.create(cover_url: book.cover_url, book_url: book.book_url,book_size: book.book_size)
+  end
 end
 

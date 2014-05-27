@@ -2,7 +2,7 @@ SERVER_URL = "http://neihanwang521.herokuapp.com"
 #SERVER_URL = "http://connotation-king.herokuapp.com"
 
 BUCKET_IMAGES_CARTOON_COVER = 'images/cartoon/cover/'
-
+BUCKET_DATA_CARTOON = 'data/cartoon/'
 #user input content type
 CONSTANT_BASE = 1000
 USER_CONTENT_TYPE_ERROR = -1

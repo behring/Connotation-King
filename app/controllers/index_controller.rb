@@ -58,15 +58,32 @@ get '/bucket/*' do
 	# bucket.objects.each do |obj|
  #  		puts obj.key
 	# end
+  cartoon_books = bucket.objects.with_prefix(BUCKET_DATA_CARTOON)
+  cartoon_covers = bucket.objects.with_prefix(BUCKET_IMAGES_CARTOON_COVER)
+  puts "cartoon_books count:#{cartoon_books.count}   cartoon_books count:#{cartoon_covers.count}"
+  cartoon_books.each_with_index do |s3_book,index|
+    if index>0
+      book = Book.new
+      book.book_url= s3_book.public_url.to_s
+      book.cover_url = cartoon_covers[index].public_url.to_s
+      book.book_size = s3_book.content_length.to_s
+      DBAdd.add_book(book)
+      puts "bookUrl:#{book.book_url}   bookSize:#{book.book_size}  bookCover:#{book.cover_url}"
 
-	case request_path
-		when BUCKET_IMAGES_CARTOON_COVER
-			bucket.objects.with_prefix("#{request_path}").each_with_index(:limit => 5) do |cover,index|
-  			if index>0
-  				puts "#{cover.public_url}   #{index}"
-  			end
-		end
-	end
+
+    end
+
+  end
+
+	#case request_path
+	#	when BUCKET_DATA_CARTOON  #each_with_index(:limit => 5)
+	#		bucket.objects.with_prefix("#{request_path}").each_with_index do |cover,index|
+  	#		if index>0
+  	#			puts "#{cover.public_url}   #{index}"
+   #     end
+   #   end
+   # when BUCKET_IMAGES_CARTOON_COVER
+	#end
 
 	"DDD"
 end
