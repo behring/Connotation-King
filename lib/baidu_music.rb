@@ -1,13 +1,13 @@
 module BaiduMusic
 	def self.get_music(singer,song)
-		#music = DBQuery.get_music(singer,song)
-		#if music != nil
-		#	music
-		#else
+		music = DBQuery.get_music(singer,song)
+		if music != nil
+			music
+		else
 			# go to baidu interface get a music
 			music = request_baidu_inteface(singer,song)
-      music
-		#end
+      		music
+		end
 	end
 
 
