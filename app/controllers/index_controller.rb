@@ -32,7 +32,7 @@ get '/test' do
 	# "#{count.class}"
 
   music = BaiduMusic.get_music('刘德华','冰雨')
-"#music URL：{music.url}"
+"music URL：#{music.url}"
   # song = "冰雨"
   # singer = "刘德华"
   # music = BaiduMusic.get_music(singer,song)
