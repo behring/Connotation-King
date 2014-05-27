@@ -89,6 +89,7 @@ module DBQuery
   end
 
   def self.get_jzw_answer(form_user_name,jzw_id = -1)
+    #用户没有输入急转弯的编号，返回最后一次请求的急转弯的答案
     if jzw_id == -1
       user = User.where("identity_user = ? AND data_type = ?",form_user_name,DataType::JZW).last
       Jzw.find_by(:id => user.data_id).answer

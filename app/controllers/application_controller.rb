@@ -39,11 +39,13 @@ on_text do
 
     when USER_CONTENT_TYPE_JZW
         jzw = DBQuery.get_random_jzw(form_user_name,user_input_content)
-        "#{jzw.question}\n(急转弯编号:#{jzw.id})"
+        "#{jzw.question}\n(急转弯编号:#{jzw.id},回复“内含王+急转弯编号获取答案”)"
 
     when USER_CONTENT_TYPE_JZW_ANSWER
         #不传jzw的id，默认返回最后一次急转弯的答案
-        answer = DBQuery.get_jzw_answer(form_user_name)
+        #answer = DBQuery.get_jzw_answer(form_user_name)
+        answer_id = user_input_content.split('+')[1].to_i
+        answer = DBQuery.get_jzw_answer(form_user_name,answer_id)
         if answer !=nil
           "#{answer}"
         else
