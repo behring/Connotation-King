@@ -32,13 +32,6 @@ require_relative './constant'
 # require 'timers'
 # require_relative '../lib/timer'
 
-puts 'config aws with access account'
-AWS.config(
-    :access_key_id => 'xxxxxx',
-    :secret_access_key => 'xxxxxxxxx'
-)
-puts 'config finished'
-
 
 configure :development do
 

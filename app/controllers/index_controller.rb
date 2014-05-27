@@ -31,8 +31,8 @@ get '/test' do
 	# count = page.xpath("/result/p2p/type").text
 	# "#{count.class}"
 
- jump_url = "#{SERVER_URL}/cartoon/"
-"#{jump_url}"
+  music = BaiduMusic.get_music('刘德华','冰雨')
+"#music URL：{music.url}"
   # song = "冰雨"
   # singer = "刘德华"
   # music = BaiduMusic.get_music(singer,song)
