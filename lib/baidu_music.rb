@@ -17,8 +17,8 @@ module BaiduMusic
 		url = "http://box.zhangmen.baidu.com/x?op=12&count=1&title=#{song}$$#{singer}$$$$"
     #url = "http://api.map.baidu.com/geocoder?location=40.8248319,111.6604351&coord_type=gcj02&output=xml"
 		p "--------------------------------1-----#{url}--------------------------------"
-
-		page = Nokogiri::XML(open(URI.encode(url),:proxy => 'http://127.0.0.1:8087'),nil,'utf-8')
+#117.36.231.239:9999
+		page = Nokogiri::XML(open(URI.encode(url),:proxy => 'http://117.36.231.239:9999'),nil,'utf-8')
 		count = page.xpath("/result/count").text.to_i
 p "----------------------------page body--------|#{page.to_s}|------------------------------"
   
