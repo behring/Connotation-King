@@ -10,7 +10,7 @@ module DBAdd
   end
 
   def self.add_book(book)
-    Book.create(cover_url: book.cover_url, book_url: book.book_url,book_size: book.book_size)
+    Book.create(volume_number:book.volume_number, cover_url: book.cover_url, book_url: book.book_url,book_size: book.book_size)
   end
 end
 

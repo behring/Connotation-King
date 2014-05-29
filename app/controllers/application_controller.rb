@@ -1,6 +1,5 @@
 token "zhaolin"
 
-
 on_text do
   form_user_name = params[:FromUserName]
   user_input_content = params[:Content].strip

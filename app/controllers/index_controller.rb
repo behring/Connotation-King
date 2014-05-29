@@ -47,9 +47,8 @@ get '/index' do
 end
 
 
-get '/bucket/*' do
+get '/bucket/update' do
 
-	request_path = params[:splat][0]
 	s3 = AWS::S3.new
 	puts "get an instance of the S3 interface."
 	puts "remove bucket #{BUCKET_NAME} if exist"
@@ -59,13 +58,14 @@ get '/bucket/*' do
  #  		puts obj.key
 	# end
   cartoon_books = bucket.objects.with_prefix(BUCKET_DATA_CARTOON)
-  cartoon_covers = bucket.objects.with_prefix(BUCKET_IMAGES_CARTOON_COVER)
+  cartoon_covers = bucket.objects.with_prefix(BUCKET_IMAGES_CARTOON_COVER).collect(&:public_url)
   puts "cartoon_books count:#{cartoon_books.count}   cartoon_books count:#{cartoon_covers.count}"
   cartoon_books.each_with_index do |s3_book,index|
     if index>0
       book = Book.new
+      book.volume_number = index
       book.book_url= s3_book.public_url.to_s
-      book.cover_url = cartoon_covers[index].public_url.to_s
+      book.cover_url = cartoon_covers[index].to_s
       book.book_size = s3_book.content_length.to_s
       DBAdd.add_book(book)
       puts "bookUrl:#{book.book_url}   bookSize:#{book.book_size}  bookCover:#{book.cover_url}"
@@ -85,17 +85,34 @@ get '/bucket/*' do
    # when BUCKET_IMAGES_CARTOON_COVER
 	#end
 
-	"DDD"
+	"update ok"
 end
 
 get '/cartoons/list' do
- # matches "GET /posts?page=2&count=40&descend = false"
-  page = params[:page]
-  count = params[:count]
-  descend = params[:descend]
+  #/cartoons/list?param={"main":{"count":20,"page":1,"descend":true},"extend":{"version":"1.0"}}
+  request_json = params[:param]
+  puts "request_json :#{request_json}"
 
+  parsedJson = JSON.parse(request_json)
 
-  "page :#{page}   count:#{count}   descend :#{descend}"
+  descend = params[:descend].to_bool
+
+  count = parsedJson["main"]["count"].to_i
+  page = parsedJson["main"]["page"].to_i
+  descend = parsedJson["main"]["descend"].to_bool
+
+  puts "count :#{count}  page:#{page}  descend:#{descend}"
+
+  start_position = page*count
+  if descend
+    order_method = :desc
+  else
+    order_method = :asc
+  end
+  books = Book.order(id: order_method).limit(count).offset(start_position)
+
+"#{{:books => books}.to_json}"
+
 end
 
 

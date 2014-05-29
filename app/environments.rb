@@ -8,6 +8,7 @@ require 'net/http'
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 require 'aws-sdk'
+require 'json'
 
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
@@ -26,6 +27,7 @@ require_relative '../lib/user_content_analysis'
 require_relative '../app/controllers/index_controller'
 require_relative '../app/controllers/application_controller'
 
+require_relative '../lib/bool_convert'
 require_relative './constant'
 
 
