@@ -9,18 +9,22 @@ require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 require 'aws-sdk'
 require 'json'
-
+require 'net/smtp'
+require 'mail'
+require 'securerandom'
 require_relative '../app/models/cartoon'
 require_relative '../app/models/joke'
 require_relative '../app/models/jzw'
 require_relative '../app/models/music'
 require_relative '../app/models/user'
+require_relative '../app/models/client_user'
 require_relative '../app/models/book'
 
 
 require_relative '../lib/data_type'
 require_relative '../lib/db_add'
 require_relative '../lib/db_query'
+require_relative '../lib/db_update'
 require_relative '../lib/baidu_music'
 require_relative '../lib/user_content_analysis'
 

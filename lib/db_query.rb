@@ -119,4 +119,15 @@ module DBQuery
   end
 
 
+
+  def self.get_client_user(email_or_token)
+    if email_or_token.include?('@')
+      puts "email_or_token  is   Email"
+       ClientUser.where("email = ?",email_or_token).first
+    else
+      puts "email_or_token  is   token"
+       ClientUser.where("token = ?",email_or_token).first
+    end
+
+  end
 end

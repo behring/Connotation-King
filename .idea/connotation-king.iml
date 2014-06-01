@@ -45,11 +45,14 @@
     <orderEntry type="library" scope="PROVIDED" name="haml (v4.0.5, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.9, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.3, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v4.7.5, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.9.2, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.17.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.5, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-protection (v1.5.2, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v1.4.4, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
@@ -58,6 +61,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sinatra-redirect-with-flash (v0.2.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.39, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="wei-backend (v0.1.4, RVM: ruby-2.0.0-p451 [connotation-king]) [gem]" level="application" />
   </component>

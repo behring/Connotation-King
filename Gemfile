@@ -21,6 +21,7 @@ gem 'sinatra-redirect-with-flash'
 #http://rubydoc.info/gems/timers/2.0.0/frames
 # gem "timers", "~> 2.0.0"
 gem 'aws-sdk'
+gem 'mail', '~> 2.5.4'
 
 group :development do
 	#gem 'shotgun'

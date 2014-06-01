@@ -1,8 +1,10 @@
 #SERVER_URL = "http://neihanwang521.herokuapp.com"
 #SERVER_URL = "http://connotation-king.herokuapp.com"
-SERVER_URL = 'http://neihanwang.info'
+#SERVER_URL = 'http://neihanwang.info'
+SERVER_URL = 'http://192.168.1.10:9292'
 BUCKET_IMAGES_CARTOON_COVER = 'images/cartoon/cover/'
 BUCKET_DATA_CARTOON = 'data/cartoon/'
+URL_VERIFICATION = SERVER_URL+"/verification"
 #user input content type
 CONSTANT_BASE = 1000
 USER_CONTENT_TYPE_ERROR = -1
@@ -16,3 +18,10 @@ USER_CONTENT_TYPE_MUSIC_SEARCH = CONSTANT_BASE+USER_CONTENT_TYPE_MUSIC
 USER_CONTENT_TYPE_CX = "CX"
 
 BUCKET_NAME= 'neihanwang-bucket'
+
+
+FROM = 'neihanwang@126.com'
+FROM_PASSWORD = 'behring0801'
+FROM_NAME='内含王'
+TO_NAME = '亲爱的用户'
+SUBJECT = '内含王手机客户端验证'

@@ -12,5 +12,11 @@ module DBAdd
   def self.add_book(book)
     Book.create(volume_number:book.volume_number, cover_url: book.cover_url, book_url: book.book_url,book_size: book.book_size)
   end
+
+  #只要邮箱认证成功，就是一个新用户，只是昵称还不知道
+  def self.add_client_user(client_user)
+    ClientUser.create(token: client_user.token, nickname: client_user.nickname, email: client_user.email,code: client_user.code)
+  end
+
 end
 
