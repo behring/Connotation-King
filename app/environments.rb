@@ -29,7 +29,10 @@ require_relative '../lib/baidu_music'
 require_relative '../lib/user_content_analysis'
 
 require_relative '../app/controllers/index_controller'
-require_relative '../app/controllers/application_controller'
+require_relative '../app/controllers/other_controller'
+require_relative '../app/controllers/book_controller'
+require_relative '../app/controllers/register_controller'
+require_relative '../app/controllers/weixin_controller'
 
 require_relative '../lib/bool_convert'
 require_relative './constant'

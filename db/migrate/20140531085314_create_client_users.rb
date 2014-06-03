@@ -5,6 +5,7 @@ class CreateClientUsers < ActiveRecord::Migration
       t.string :nickname
       t.string :email
       t.string :code
+      t.string :head_icon_url
       t.timestamps
     end
   end

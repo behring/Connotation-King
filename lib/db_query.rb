@@ -128,6 +128,11 @@ module DBQuery
       puts "email_or_token  is   token"
        ClientUser.where("token = ?",email_or_token).first
     end
-
   end
+
+
+  def self.check_login(email,password)
+      ClientUser.where("email = ?,password = ? ",email,password).first
+  end
+
 end

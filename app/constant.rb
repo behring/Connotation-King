@@ -1,7 +1,8 @@
 #SERVER_URL = "http://neihanwang521.herokuapp.com"
 #SERVER_URL = "http://connotation-king.herokuapp.com"
 #SERVER_URL = 'http://neihanwang.info'
-SERVER_URL = 'http://192.168.1.10:9292'
+#SERVER_URL = 'http://192.168.1.10:9292'
+SERVER_URL = 'http://192.168.0.101:9292'#缤纷南郡
 BUCKET_IMAGES_CARTOON_COVER = 'images/cartoon/cover/'
 BUCKET_DATA_CARTOON = 'data/cartoon/'
 URL_VERIFICATION = SERVER_URL+"/verification"

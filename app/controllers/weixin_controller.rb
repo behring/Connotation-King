@@ -100,3 +100,10 @@ end
 on_unsubscribe do
   '欢迎您再次订阅！'
 end
+
+#weixin
+get '/cartoon/:id' do
+  cartoon_id = params[:id].to_i
+  cartoon = Cartoon.find(cartoon_id)
+  haml :cartoon,:locals => { :title =>cartoon.title, :picture_url =>cartoon.picture_url}
+end
