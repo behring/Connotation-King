@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20140531085314) do
     t.string   "email"
     t.string   "code"
     t.string   "head_icon_url"
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

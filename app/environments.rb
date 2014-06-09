@@ -25,6 +25,7 @@ require_relative '../lib/data_type'
 require_relative '../lib/db_add'
 require_relative '../lib/db_query'
 require_relative '../lib/db_update'
+require_relative '../lib/db_delete'
 require_relative '../lib/baidu_music'
 require_relative '../lib/user_content_analysis'
 

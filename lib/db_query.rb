@@ -132,7 +132,7 @@ module DBQuery
 
 
   def self.check_login(email,password)
-      ClientUser.where("email = ?,password = ? ",email,password).first
+      ClientUser.where("email = ? AND password = ? ",email,password).first
   end
 
 end

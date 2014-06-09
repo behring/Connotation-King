@@ -42,6 +42,20 @@ post '/check_register' do
     "#{{:status => 0}.to_json}"
   end
 end
+
+#注册检测接口，判断邮箱是否注册
+post '/cancel_register' do
+  request_json = params[:param]
+  parsedJson = JSON.parse(request_json)
+  email = parsedJson["main"]["email"].to_s
+  client_user = DBQuery.get_client_user(email)
+  if not client_user.blank?
+    DBDelete.delete_client_user(email)
+  end
+  "#{{:status => 1}.to_json}"
+end
+
+
 #获取验证码，验证码将发送到邮箱并返回客户端作为认证
 post '/get_verification_code' do
   request_json = params[:param]
@@ -117,18 +131,22 @@ MESSAGE_END
     Net::SMTP.start('smtp.126.com', 25, 'mail.126.com',
                     FROM, FROM_PASSWORD, :plain) do |smtp|
       smtp.send_message message, FROM,email
+
+      client_user = ClientUser.new
+      client_user.token = token
+      client_user.email = email
+      DBAdd.add_client_user(client_user)
+
+      "#{{:verification_code => verification_code}.to_json}"
+
     end
   rescue  #$! :表示异常信息 $@ :表示异常出现的代码位置
     puts "error:#{$!} at:#{$@}"
-
+    "#{{:error => 'server send email an error!',
+        :error_code=>0,:request=>'/get_verification_code'}.to_json}"
   end
 
-  client_user = ClientUser.new
-  client_user.token = token
-  client_user.email = email
-  DBAdd.add_client_user(client_user)
 
-  "#{{:verification_code => verification_code}.to_json}"
 end
 
 
