@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f5b400d-03e2-4f10-bec4-636098b3e853" name="Default" comment="update get jzw answer&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/db_delete.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140531085314_create_client_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20140531085314_create_client_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/constant.rb" afterPath="$PROJECT_DIR$/app/constant.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/db_query.rb" afterPath="$PROJECT_DIR$/lib/db_query.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/environments.rb" afterPath="$PROJECT_DIR$/app/environments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/index_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/register_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/register_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatar04b57a4b-83e8-4362-b8f6-f93513c632e4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatar2b0edb06-430d-43b1-bb7b-6516be955bf1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatar4d87a8ac-b08f-4119-aa7a-1bb705d90397.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatar92cf3d0f-0c6e-40f2-b41c-75751ad9b7fd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatarabf33319-452f-4ad6-997e-66c83d9b4519.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatarb3fc1ee5-4a57-401f-90f9-44039799f5cd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatarba9e4d40-cf50-4984-b5df-a580ad0f179a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatard2430956-d7b6-4942-8aac-3110b807c5c0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user/avatard93ad292-4ec0-452e-87fb-36d32025a48c.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/db_delete.rb" afterPath="$PROJECT_DIR$/lib/db_delete.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/other_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/other_controller.rb" />
     </list>
     <ignored path="connotation-king.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +38,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="338" selection-end="338" vertical-scroll-proportion="0.24725275" vertical-offset="0" max-vertical-offset="800">
+            <state line="9" column="32" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="800">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140528033042_create_books.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140528033042_create_books.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="25" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400">
               <folding />
             </state>
           </provider>
@@ -48,7 +59,7 @@
       <file leaf-file-name="constant.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/constant.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+            <state line="8" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -63,10 +74,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="other_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/other_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="27" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.10115607" vertical-offset="830" max-vertical-offset="1840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="db_delete.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/db_delete.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="11" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="200">
+            <state line="6" column="26" selection-start="116" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -155,14 +175,14 @@
         <option value="$PROJECT_DIR$/app/controllers/weixin_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/lib/db_update.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/other_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140531085314_create_client_users.rb" />
         <option value="$PROJECT_DIR$/lib/db_query.rb" />
         <option value="$PROJECT_DIR$/app/environments.rb" />
-        <option value="$PROJECT_DIR$/lib/db_delete.rb" />
         <option value="$PROJECT_DIR$/app/controllers/register_controller.rb" />
         <option value="$PROJECT_DIR$/app/constant.rb" />
         <option value="$PROJECT_DIR$/app/controllers/index_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/db_delete.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/other_controller.rb" />
       </list>
     </option>
   </component>
@@ -507,7 +527,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2197092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2819063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25396827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21082391" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -515,11 +535,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17989418" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -754,16 +774,6 @@
         <state line="108" column="3" selection-start="3148" selection-end="3148" vertical-scroll-proportion="1.1658031" vertical-offset="1485" max-vertical-offset="2280" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140528033042_create_books.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="106" selection-end="119" vertical-scroll-proportion="0.11516315" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/other_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="64" selection-start="1593" selection-end="1612" vertical-scroll-proportion="-8.846154" vertical-offset="870" max-vertical-offset="1840" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="32" selection-start="1307" selection-end="1339" vertical-scroll-proportion="0.68162084" vertical-offset="469" max-vertical-offset="1160" />
@@ -793,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/db_delete.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/environments.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="34" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1520">
@@ -809,7 +812,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/constant.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+        <state line="8" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140528033042_create_books.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400">
           <folding />
         </state>
       </provider>
@@ -823,7 +833,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="338" selection-end="338" vertical-scroll-proportion="0.24725275" vertical-offset="0" max-vertical-offset="800">
+        <state line="9" column="32" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/db_delete.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="116" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/other_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="27" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.10115607" vertical-offset="830" max-vertical-offset="1840">
           <folding />
         </state>
       </provider>

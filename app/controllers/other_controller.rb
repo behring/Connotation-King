@@ -43,7 +43,7 @@ end
 
 get '/bucket/update' do
 
-
+  DBDelete.delete_all_book()
 
 	s3 = AWS::S3.new
 	puts "get an instance of the S3 interface."
